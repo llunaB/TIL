@@ -112,7 +112,7 @@ git config --list
 git remote add origin https://github.com/.../folder.git
 
 # 등록된 원격 저장소 목록 확인
-git remote -V
+git remote -v
 
 # 등록된 원격 저장소명 확인
 git remote
