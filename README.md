@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# command (updated from mac!!)
-=======
 # command
->>>>>>> 0fef71fc7d1b727c9a3fe4ebe31a438e2f109594
 
 > 리눅스 기본 명령어 정의
 
