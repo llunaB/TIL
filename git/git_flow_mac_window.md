@@ -39,7 +39,9 @@
 
 
 
-##### 1. window 에서 최초 설정
+## 1. window 에서 최초 설정
+
+### git init
 
 - git 로컬 저장소를 설정한다.
 
@@ -53,11 +55,41 @@ git init
 git status
 ```
 
+- (최초시) git commit 작성자(author)를 설정한다.
+
+```python
+git config --global user.name "김코딩"
+git config --global user.email "myemail@gmail.com"
+```
+
+- (최초시) 설정한 값을 확인한다. 입력한대로 나오면 된다.
+
+```bash
+git config --global user.email
+git config --global user.name
+```
+
+- 오타나 잘못 입력했을 경우 다시 입력하면 덮어씌워진다.
+
+- 지우고 싶은 경우 지우고, 삭제되었는지 리스트에서 확인한다.
+
+```bash
+git config --unset --global user.name
+git config --unset --global user.email
+
+# 현재 상태를 확인
+git config --list
+```
+
+=========================================== Repo 가 된다.
+
+### git add
+
 - `add` 파일을 스테이지로 올린다.
 
 ```bash
 git add <file name>
-# git add .
+# git add .  => 파일 전체를 올린다.
 ```
 
 - cf. 잘못되었을 경우 `add`취소한다.
@@ -66,6 +98,10 @@ git add <file name>
 git reset HEAD <file name>
 # git reset
 ```
+
+
+
+### git commit
 
 - `commit` 커밋을 만든다.
 
@@ -81,30 +117,9 @@ git reset HEAD^^
 git reset HEAD^^^
 ```
 
-- (최초시) git commit 작성자(author)를 설정한다.
+=========================================== Local Repo
 
-```bash
-git config --global user.email myemail@gmail.com
-git config --global user.name myusername
-```
-
-- (최초시) 설정한 값을 확인한다. 입력한대로 나오면 된다.
-
-```bash
-git config --global user.email
-git config --global user.name
-```
-
-- 오타나 잘못 입력했을 경우 다시 입력하면 덮어씌워진다.
-- 지우고 싶은 경우 지우고, 삭제되었는지 리스트에서 확인한다.
-
-```bash
-git config --unset --global user.name
-git config --unset --global user.email
-
-# 현재 상태를 확인
-git config --list
-```
+### git push
 
 - (최초시) 이제 Local 영역에서 Remote로 넘어왔다. 원격 저장소를 등록하자. master로 관리되고 있는 경로.git 주소를 입력하면 된다.
 
@@ -133,9 +148,19 @@ git config --list
 
 
 
-##### 2. mac 에서 클론, 수정 및 푸시
+
+
+=========================================== Remote Repo
+
+
+
+
+
+## 2. mac 에서 클론, 수정 및 푸시
 
 github 에 잔디가 심어졌을 것이다. 이제 mac으로 작업해보자
+
+### git clone
 
 - `clone`으로 원격 저장소에서 mac의 로컬 저장소로 프로젝트를 가져오자. *이때 master branch를 자동으로 가져오고 origin도 remote로 add해준다. 해당 디렉토리로 들어가면 이미 git 프로젝트로 init 되어있고, remote 등록도 되어 있다.* 
 
