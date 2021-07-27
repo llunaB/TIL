@@ -27,6 +27,8 @@
   # 3
   ```
 
+- Built-in Function 적용시 원본데이터 유지
+
 
 
 #### 문자열 자르기
@@ -71,6 +73,11 @@
 
 'coone'.replace('o', 'a') # caane 바뀔 글자를 새로운글자로 바꿔서 반환
 'cooone'.replace('o', 'i', 2) # ciione 카운트 지정시 해당개수만큼 시행
+
+# 원본데이터 바뀌지 않는다. 활용하려면? => 변수에 넣어야!
+result = a.replace('y','h')
+print(a)
+print(result)
 ```
 
 ##### .strip([chars]) : 특정 문자 지정하여 제거, 미지정시 공백 제거
@@ -78,6 +85,12 @@
 ```python
 '    와우!\n'.strip() # '와우!'
 '안녕하세요???'.rstrip('?') #'안녕하세요'
+'    와우!\n'.lstrip() # '와우!'
+
+# 원본데이터는 바뀌지 않는다. 활용하려면? => 변수에 넣어야!
+result = a.strip()
+print(a)
+print(result)
 ```
 
 ##### .split([char]) : 문자열을 특정 단위로 나눠 리스트로 반환 (중요!!)
@@ -86,10 +99,17 @@
 'a,b,c'.split('_') # [a,b,c]
 'a b c'.split()	#['a', 'b', 'c']
 
+# 원본데이터는 바뀌지 않는다. 활용하려면? => 변수에 넣어야!
+result = a.split()
+print(a)
+print(result)
+
 # 1 2 3 4 5 로 입력된 input str 데이터를 int로 바꾸려면?
+# sol1 
 i = input()
 numbers_str = i.split(' ') # char(띄어쓰기) 기준으로 분리
 
+# sol2
 result = []
 for number_str in numbers_str:
     result += [int(number_str)]
@@ -97,16 +117,22 @@ for number_str in numbers_str:
 print(result)
 # [1, 2, 3, 4, 5]
 
+# sol3
 result = map(int, input().split(' '))
 print(list(result))
 # [1, 2, 3, 4, 5]
 ```
 
-##### 'sepetator'.join([iterable]) : 반복가능한 요소들을 구분자로 합쳐 문자열로 반환
+##### 'separator'.join([iterable]) : 반복가능한 요소들을 구분자로 합쳐 문자열로 반환
 
 ``` python
 '!'.join('love') # 'l!o!v!e'
 ' '.join(['3', '5']) # '3 5'
+
+# 원본데이터는 바뀌지 않고 수정한 결과를 반환. 활용하려면? => 변수에 넣어야!
+result = '!'.join(a)
+print(a)
+print(result)
 ```
 
 
@@ -122,10 +148,6 @@ print(list(result))
 
 
 
-
-
-
-
 ## 리스트 list
 
 #### 특징
@@ -133,6 +155,7 @@ print(list(result))
 - mutable : 변경 가능하다
 - ordered : 순서가 있다
 - iterable : 순회 가능하다
+- Built-in Function 적용시 원본데이터 변경
 
 
 
@@ -163,6 +186,21 @@ cafe += ['presso']
 # ['starbucks', 'holly', 'p', 'r', 'e', 's', 's', 'o']
 ```
 
+##### .append(x) vs .extend(iterable) 
+
+```python
+# append는 개별 요소가, extend는 리스트 내의 데이터가 들어간다.
+cafe = ['starbucks', 'tomntoms', 'hollys']
+
+cafe.append(['coffeenie'])
+print(cafe)
+# ['starbucks', 'tomntoms', 'hollys', ['coffeenie']]
+
+cafe.extend(['twosome'])
+print(cafe)
+# ['starbucks', 'tomntoms', 'hollys','twosome']
+```
+
 ##### .insert(i, x) : 정해진 위치 i에 값을 추가
 
 ```python
@@ -175,11 +213,13 @@ cafe.insert(0, 'start')
 ##### .pop(i) : 정해진 위치 i 값을 삭제하고, 그 항목을 반환, i 미지정시 마지막 값을 삭제하고 반환
 
 ```python
-numbers = ['hi',1 , 2, 3]
-numbers.pop()
-# ['hi', 1, 2]
-numbers.pop(0)
-# [1, 2, 3]
+numbers = [1, 2, 3, 4, 5, 6]
+result = numbers.pop()
+print(result)
+print(numbers)
+
+# 6
+# [1, 2, 3, 4, 5]
 ```
 
 
@@ -204,6 +244,13 @@ numbers.count(1)
 # 3
 numbers.count(100)
 # 0 
+
+# 원하는 값을 모두 삭제하려면 다음과 같이 할 수 있습니다.
+a = [1, 2, 1, 3, 4]
+target_value = 1
+for i in range(a.count(target_value)):
+    a.remove(target_value)
+print(a)
 ```
 
 ##### .sort() : 원본 리스트를 정렬함. 복사본은 없기 때문에 None 을 반환. 내장함수인 sorted 함수와 비교!!
@@ -355,18 +402,3 @@ print(result, type(result))
 list(result)
 # ['1', '2', '3']
 ```
-
-
-
-
-
-
-
-## 세트 set
-
-
-
-
-
-## 딕셔너리 dictionary
-
