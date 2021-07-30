@@ -4,8 +4,6 @@
 
 ### <u>Create</u>
 
-- create
-
 ```python
 my_dict = {}
 my_dict['apple'] = '사과'
