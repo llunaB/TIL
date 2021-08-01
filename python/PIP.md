@@ -4,7 +4,7 @@
 
 [https://pypi.org/]()
 
-![image-20210728160831682](/Users/euijinpang/TIL/python/PIP.assets/image-20210728160831682.png)
+![image-20210728160831682](PIP.assets/image-20210728160831682.png)
 
 - 패키지는 모듈의 집합이다
 
@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 
 
-![image-20210728161000380](/Users/euijinpang/TIL/python/PIP.assets/image-20210728161000380.png)
+![image-20210728161000380](PIP.assets/image-20210728161000380.png)
 
 
 

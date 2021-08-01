@@ -3,21 +3,23 @@
 ## 조건문(Conditional Statement)
 
 - if 문은 참/거짓을 판단할 수 있는 조건식과 사용
-
 - 조건(expression) 이 참이면 이후 들여쓰기 된 코드블록 실행
-
 - 그 외의 경우 else 이후 들여쓰기 된 코드블록 실행
 
-  ```python
-  if <expression>:
-  	#
-  elif <expression>:
-    #
-  elif <expression>:
-    #
-  else:
-  	#
-  ```
+
+
+```python
+if <expression>:
+	#
+elif <expression>:
+  #
+elif <expression>:
+  #
+else:
+	#
+```
+
+
 
 ##### 조건문과 조건부 표현식
 
@@ -32,6 +34,8 @@ else:
   
 print('success') if score >= 60 else print ('failure')
 ```
+
+
 
 ##### 대표문항 : 변수 num 값의 홀짝 여부 출력
 
@@ -54,10 +58,12 @@ else:
 
 - expression이 True 일때, 문장을 반복해서 수행, False이면 종료
 
-  ```python
-  while <expression>:
-  	#
-  ```
+```python
+while <expression>:
+	#
+```
+
+
 
 ##### 예시문항 : 나무를 10번 찍고 10회째 넘어감
 
@@ -147,6 +153,8 @@ for mark in marks:
   else: 
   	print(f'{num}번 학생은 fail')
 ```
+
+
 
 ##### for문과 continue 문
 

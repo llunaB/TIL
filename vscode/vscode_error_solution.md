@@ -10,7 +10,7 @@
 
 설치한 `requests` 모듈을 `vscode`에서 인식하지 못함
 
-![image-20210731155559927](/Users/euijinpang/Library/Application Support/typora-user-images/image-20210731155559927.png)
+<img src="vscode_error_solution.assets/image-20210731155559927.png">
 
 
 
@@ -28,4 +28,5 @@ vscode가 기본 인터프리터 경로를 `Python 3.9.6` 으로 잡고있었다
 
 - Change defauly Python interpreter path to `Python 3.9.6 : pyenv`
 
-![Screen Shot 2021-07-31 at 3.58.05 PM](/Users/euijinpang/Desktop/Screen Shot 2021-07-31 at 3.58.05 PM.png)
+<img src="vscode_error_solution.assets/Screen Shot 2021-07-31 at 3.58.05 PM.png">
+
