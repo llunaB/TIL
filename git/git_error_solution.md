@@ -14,7 +14,7 @@
 
 `git checkout master` 입력하여 브랜치를 master로 변경
 
-<img src="git_error_solution.assets/error-7829393.png">
+<img src="git_error_solution.assets/1-1.png">
 
 
 
@@ -22,11 +22,13 @@
 
 origin2 만들었다가 삭제, `git branch -m TIL master`  로 TIL 브랜치 삭제
 
-<img src="git_error_solution.assets/Screen Shot 2021-08-01 at 10.52.31 PM.png">
+![Screen Shot 2021-08-01 at 10.58.41 PM](/Users/euijinpang/TIL/git/git_error_solution.assets/2-0.png)
 
-<img src="git_error_solution.assets/Screen Shot 2021-08-01 at 10.54.14 PM.png">
+<img src="git_error_solution.assets/2-1.png">
 
-<img src="git_error_solution.assets/Screen Shot 2021-08-01 at 10.57.21 PM.png">
+<img src="git_error_solution.assets/2-2.png">
+
+<img src="git_error_solution.assets/2-3.png">
 
 
 
@@ -42,7 +44,6 @@ origin2 만들었다가 삭제, `git branch -m TIL master`  로 TIL 브랜치 �
 
 
 
-<img src="git_error_solution.assets/image-20210801230313523.png">
+<img src="git_error_solution.assets/3-1.png">
 
-<img src="git_error_solution.assets/image-20210801230459751.png">
-
+<img src="git_error_solution.assets/3-2.png">
