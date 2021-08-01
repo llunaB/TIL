@@ -8,9 +8,36 @@
 
 ##### 원인
 
-##### 해결방안
+???
+
+##### 해결방안1
 
 `git checkout master` 입력하여 브랜치를 master로 변경
 
 ![error](/Users/euijinpang/Desktop/error.png)
 
+
+
+##### 해결방안2
+
+origin2 만들었다가 삭제, `git branch -m TIL master`  로 TIL 브랜치 삭제
+
+![Screen Shot 2021-08-01 at 10.58.41 PM](/Users/euijinpang/TIL/git/git_error_solution.assets/Screen Shot 2021-08-01 at 10.58.41 PM-7826373.png)
+
+![Screen Shot 2021-08-01 at 10.52.31 PM](/Users/euijinpang/TIL/git/git_error_solution.assets/Screen Shot 2021-08-01 at 10.52.31 PM.png)
+
+![Screen Shot 2021-08-01 at 10.54.14 PM](/Users/euijinpang/TIL/git/git_error_solution.assets/Screen Shot 2021-08-01 at 10.54.14 PM.png)
+
+![Screen Shot 2021-08-01 at 10.57.21 PM](/Users/euijinpang/TIL/git/git_error_solution.assets/Screen Shot 2021-08-01 at 10.57.21 PM.png)
+
+
+
+##### 해결방안 3
+
+- **`git checkout -b master`  ==> Switch to a new branch 'master'**
+- **`git branch -d TIL` ==> Deleted branch TIL**
+- **`git branch` ==> Check branch**
+
+![image-20210801230313523](/Users/euijinpang/TIL/git/git_error_solution.assets/image-20210801230313523.png)
+
+![image-20210801230459751](/Users/euijinpang/TIL/git/git_error_solution.assets/image-20210801230459751.png)

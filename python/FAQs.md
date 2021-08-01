@@ -17,7 +17,7 @@ print(x ,id(x)) # => [10] 1786298880768
 print(y, id(y)) # => [10] 1786298880768
 ```
 
-![image-20210727222825064](C:\Users\euiji\AppData\Roaming\Typora\typora-user-images\image-20210727222825064.png)
+
 
 - However, **when integers are immutable**, we are not muting the int `5` by incrementing its value;
 - Instead, we create a new object and assigning it to `x`.
@@ -35,6 +35,4 @@ print(x ,id(x)) # => 6 1786292496848
 print(y, id(y)) # => 5 1786292496816
 
 ```
-
-![image-20210727223612326](C:\Users\euiji\AppData\Roaming\Typora\typora-user-images\image-20210727223612326.png)
 

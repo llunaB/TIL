@@ -4,10 +4,6 @@
 
 ### sorted() vs. .sort()
 
-![image-20210727202701856](C:\Users\euiji\AppData\Roaming\Typora\typora-user-images\image-20210727202701856.png)
-
-![image-20210727202728635](C:\Users\euiji\AppData\Roaming\Typora\typora-user-images\image-20210727202728635.png)
-
 | `sorted`(*iterable*, ***, *key=None*, *reverse=False*)       | `sort`(***, *key=None*, *reverse=False*)                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | built-in function / 내장함수                                 | method / 메소드                                              |
@@ -31,10 +27,6 @@ print(numbers, result)
 
 
 ### .extend() vs. .append()
-
-![image-20210727213343199](C:\Users\euiji\AppData\Roaming\Typora\typora-user-images\image-20210727213343199.png)
-
-![image-20210727213422585](C:\Users\euiji\AppData\Roaming\Typora\typora-user-images\image-20210727213422585.png)
 
 - `append` adds an element to a list, and `extend` concatenates the first list with another list(or another iterable, not necessarily a list.)
 

@@ -44,9 +44,9 @@ print (batman.gain_points())
 
 
 
-![Screen Shot 2021-07-28 at 10.27.55 PM](/Users/euijinpang/Desktop/Screen Shot 2021-07-28 at 10.27.55 PM.png)
+![Screen Shot 2021-07-28 at 10.27.55 PM](/Users/euijinpang/TIL/python/OOP.assets/Screen Shot 2021-07-28 at 10.27.55 PM.png)
 
-![image-20210728222718553](/Users/euijinpang/Library/Application Support/typora-user-images/image-20210728222718553.png)
+![image-20210728222718553](/Users/euijinpang/TIL/python/OOP.assets/image-20210728222718553.png)
 
 ## Methods
 
@@ -83,7 +83,7 @@ square.setSideLength(3.0)
 print square.getSideLength() # prints 3.0 to the screen
 ```
 
-![image-20210728225503158](/Users/euijinpang/Library/Application Support/typora-user-images/image-20210728225503158.png)
+![image-20210728225503158](/Users/euijinpang/TIL/python/OOP.assets/image-20210728225503158.png)
 
 ### Constructor
 

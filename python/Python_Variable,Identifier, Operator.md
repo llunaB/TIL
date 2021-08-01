@@ -76,7 +76,7 @@
 
 - divmond(a, b) : 각각 몫과 나머지를 반환
 
-![image-20210721082345372](/Users/euijinpang/Library/Application Support/typora-user-images/image-20210721082345372.png)
+![image-20210721082345372](/Users/euijinpang/TIL/python/Python_Variable,Identifier, Operator.assets/image-20210721082345372.png)
 
 ##### 비교 연산자
 
@@ -86,7 +86,7 @@
 
 ##### 논리 연산자
 
-![image-20210721082655223](/Users/euijinpang/Library/Application Support/typora-user-images/image-20210721082655223.png)
+![image-20210721082655223](/Users/euijinpang/TIL/python/Python_Variable,Identifier, Operator.assets/image-20210721082655223-7827442.png)
 
 - 단축평가!!
 
@@ -114,7 +114,7 @@
 
 ##### 복합 연산자
 
-![image-20210721083433403](/Users/euijinpang/Library/Application Support/typora-user-images/image-20210721083433403.png)
+![image-20210721083433403](/Users/euijinpang/TIL/python/Python_Variable,Identifier, Operator.assets/image-20210721083433403.png)
 
 ##### 기타 연산자
 
