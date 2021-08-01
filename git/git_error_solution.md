@@ -22,7 +22,7 @@
 
 origin2 만들었다가 삭제, `git branch -m TIL master`  로 TIL 브랜치 삭제
 
-![Screen Shot 2021-08-01 at 10.58.41 PM](/Users/euijinpang/TIL/git/git_error_solution.assets/2-0.png)
+<img src="git_error_solution.assets/2-0.png">
 
 <img src="git_error_solution.assets/2-1.png">
 
