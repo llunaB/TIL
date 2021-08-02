@@ -4,7 +4,7 @@
 
 [https://pypi.org/]()
 
-![image-20210728160831682](PIP.assets/image-20210728160831682.png)
+<img src="PIP.assets/1.png">
 
 - 패키지는 모듈의 집합이다
 
@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 
 
-![image-20210728161000380](PIP.assets/image-20210728161000380.png)
+<img src="PIP.assets/2.png">
 
 
 
@@ -105,7 +105,7 @@ python -m venv <folder name>
 # python -m venv venv 
 ```
 
-![image-20210728094109324](/Users/euijinpang/TIL/python/PIP.assets/image-20210728094109324.png)
+<img src="PIP.assets/3.png">
 
 
 
@@ -115,7 +115,7 @@ python -m venv <folder name>
 
 - 폴더에 국한된 것이 아님! 다른 폴더로 가도, 실행중이기 때문에 따로 꺼야 한다
 
-![image-20210728094056211](/Users/euijinpang/TIL/python/PIP.assets/image-20210728094056211.png)
+<img src="PIP.assets/4.png">
 
 - mac
 
@@ -145,9 +145,7 @@ deactivate
 - 각 프로젝트별로 폴더를 만들어, 그 최상단에 venv를 만드는 것이 일반적이다
 - 여러개 프로젝트시, 환경을 비활성화 해야!
 
-![image-20210728100643489](/Users/euijinpang/TIL/python/PIP.assets/image-20210728100643489.png)
-
-![image-20210728102302335](/Users/euijinpang/TIL/python/PIP.assets/image-20210728102302335.png)
+<img src="PIP.assets/5.png">
 
 
 
@@ -157,7 +155,7 @@ deactivate
 
 
 
-![image-20210728102235949](/Users/euijinpang/Library/Application Support/typora-user-images/image-20210728102235949.png)
+<img src="PIP.assets/6.png">
 
 
 

@@ -44,9 +44,9 @@ print (batman.gain_points())
 
 
 
-![Screen Shot 2021-07-28 at 10.27.55 PM](/Users/euijinpang/TIL/python/OOP.assets/Screen Shot 2021-07-28 at 10.27.55 PM.png)
+<img src = "OOP.assets/2.png">
 
-![image-20210728222718553](/Users/euijinpang/TIL/python/OOP.assets/image-20210728222718553.png)
+<img src = "OOP.assets/3.png">
 
 ## Methods
 

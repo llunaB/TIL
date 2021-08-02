@@ -76,19 +76,19 @@
 
 - divmond(a, b) : 각각 몫과 나머지를 반환
 
-<img src="Python_Variable,Identifier, Operator.assets/image-20210721082345372.png">
+<img src="Python_Variable,Identifier, Operator.assets/1.png">
 
 ##### 비교 연산자
 
 - True / False 값을 리턴
 
-<img src="Python_Variable,Identifier, Operator.assets/image-20210801235931210-7829972.png">
+<img src="Python_Variable,Identifier, Operator.assets/2.png">
 
 
 
 ##### 논리 연산자
 
-<img src="Python_Variable,Identifier, Operator.assets/image-20210721082655223-7827442.png">
+<img src="Python_Variable,Identifier, Operator.assets/3.png">
 
 
 
@@ -120,7 +120,7 @@
 
 
 
-<img src="Python_Variable,Identifier, Operator.assets/image-20210721083433403.png">
+<img src="Python_Variable,Identifier, Operator.assets/4.png">
 
 
 
