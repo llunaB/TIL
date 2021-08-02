@@ -12,11 +12,11 @@ Cascading Style Sheet
 2. 임베딩 - <head> 내 <style> 지정
 3. 외부 참조 - 외부 css파일을 <head>내 <link>를 통해 불러온다. 모듈화 가능
 
-![image-20210802111708995](/Users/euijinpang/TIL/web/css.assets/image-20210802111708995.png)
+<img src="css.assets/1.png">
 
 ## CSS Seletor
 
-![image-20210802112159807](/Users/euijinpang/TIL/web/css.assets/image-20210802112159807.png)
+<img src="css.assets/2.png">
 
 ### 기본 선택자
 
@@ -113,16 +113,18 @@ p + span {
 
 ## shorthand
 
-![image-20210802151352157](/Users/euijinpang/TIL/web/css.assets/image-20210802151352157.png)
+<img src="css.assets/3.png">
 
-![image-20210802151402562](/Users/euijinpang/TIL/web/css.assets/image-20210802151402562.png)
+<img src="css.assets/4.png">
 
 ## BOX-SIZING
 
 - 디폴트는 `content-box` 이다.
 - 우리가 일반적으로 영역 볼 때는 border까지 너비를 보기 때문에 `box-sizing`을 `border-box`로 설정
 
-![image-20210802151849256](/Users/euijinpang/TIL/web/css.assets/image-20210802151849256.png)
+<img src="css.assets/5.png">
+
+
 
 ## 마진 상쇄
 
@@ -149,9 +151,7 @@ p + span {
 - width, height, margin-top, margin-bottom 지정 불가
 - span / a / image / input,label / b, em, i, strong
 
-![image-20210802153333828](/Users/euijinpang/TIL/web/css.assets/image-20210802153333828.png)
-
-##### display : inline-block
+##### <img src="css.assets/6.png">display : inline-block
 
 - inline처럼 한 줄에 표시 가능하며
 - block처럼 width, height, margin 속성 적용 가능하다
@@ -179,7 +179,7 @@ p + span {
 - 자기자신의 static 위치를 기준으로 이동
 - 레이아웃에서 요소가 차지하는 공간은 static일 때와 같음
 
-<img src="/Users/euijinpang/TIL/web/css.assets/image-20210802155316974.png" alt="image-20210802155316974" style="zoom:50%;" />
+<img src="css.assets/7.png" style="zoom:50%">
 
 ```css
 .relative{
@@ -196,7 +196,7 @@ p + span {
 - <u>**따라서 static이 아닌 부모를 미리 만들고 이동시켜야한다!!**</u>
 - 격리된 UI 
 
-<u><img src="/Users/euijinpang/TIL/web/css.assets/image-20210802155333284.png" alt="image-20210802155333284" style="zoom:50%;" /></u>
+<img src="css.assets/8.png" style="zoom:50%">
 
 
 
@@ -220,7 +220,7 @@ p + span {
 - 부모요소와 관계없이 viewport를 기준으로 이동
 - 스크롤 시에도 항상 같은 곳에 위치함
 
-<img src="/Users/euijinpang/TIL/web/css.assets/image-20210802155351662.png" alt="image-20210802155351662" style="zoom:50%;" />
+<img src="css.assets/9.png" style="zoom:50%">
 
 
 

@@ -74,7 +74,7 @@ HTML은 DOM 구조로 이루어진다. 부모 관계, 형제 관계
 
 각 태그를 별도의 객체라고 할 수 있다.
 
-![image-20210802100827309](/Users/euijinpang/TIL/web/HTML_New.assets/image-20210802100827309.png)
+<img src="html.assets/1.png">
 
 
 
@@ -149,7 +149,7 @@ article
 footer
 ```
 
-![image-20210802100903756](/Users/euijinpang/TIL/web/HTML_New.assets/image-20210802100903756.png)
+<img src="html.assets/2.png">
 
  
 
