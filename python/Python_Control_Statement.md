@@ -6,8 +6,6 @@
 - 조건(expression) 이 참이면 이후 들여쓰기 된 코드블록 실행
 - 그 외의 경우 else 이후 들여쓰기 된 코드블록 실행
 
-
-
 ```python
 if <expression>:
 	#
@@ -21,18 +19,29 @@ else:
 
 
 
-##### 조건문과 조건부 표현식
+### 조건 표현식(Conditional Expression)(Ternary Operator)
 
 ```python
-# 만약 점수가 60점을 이상이면 succeess, 미만이면 failure
-score = int(input())
+true_value if <조건식> else false_value
 
-if score >= 60:
-  print('success')
+
+#1
+result = 'odd' if num % 2 else 'even'
+
+if num % 2:
+  result = 'odd'
 else:
-  print('failure')
-  
-print('success') if score >= 60 else print ('failure')
+  result = 'even'
+
+
+#2
+value = num if num >=0 else 0
+
+if num >= 0:
+    value = num
+else:
+    value = 0
+    
 ```
 
 
@@ -52,15 +61,59 @@ else:
 
 
 
-## 반복문
+## 반복문(Loop Statement)
 
-### while 문
+### while 반복문
+
+`while` 문은 조건식이 참(`True`)인 경우 반복적으로 코드를 실행합니다.
+
+
 
 - expression이 True 일때, 문장을 반복해서 수행, False이면 종료
 
 ```python
 while <expression>:
 	#
+```
+
+
+
+##### 1부터 10까지 총합구하기
+
+- 1부터 사용자가 입력한 양의 정수까지의 총합
+
+```python
+#1
+user_input = int(input())
+result = 0
+while user_input >= 1:
+    result += user_input
+    user_input -= 1
+print(result)
+
+#2 - lecture
+n = 0
+total = 0
+user_input = int(input())
+
+while n < user_input:
+    n += 1
+    total += n
+print(total)
+```
+
+
+
+##### 한 자리씩 출력하기
+
+- 사용자로부터 숫자입력 받은 양의 정수의 각 자리 수를 1의 자리부터 차례로 출력
+
+```python
+n = int(input())
+
+while n > 0:
+    print(n%10)
+    n = n // 10
 ```
 
 
@@ -74,6 +127,8 @@ while hit < 10:
   hit = hit + 1  # hit += 1
 print('넘어갔다')
 ```
+
+
 
 ##### break로 빠져나가기
 
@@ -114,12 +169,12 @@ while True:
 
 ### for 문
 
+`for` 문은 시퀀스(string, tuple, list, range)를 포함한 순회가능한 객체(iterable)의 요소들을 순회합니다.
+
 - 리스트나 튜플, 문자열의 첫번째 요소부터 마지막 요소까지 차례로 변수에 대입
 
 ```python
 for 변수 in 리스트/튜플/문자열:
-	#
-  
 
 test = ['1','2','3']
 for i in test:
@@ -222,4 +277,48 @@ for i in range(1,101):
 print(num)
   
 ```
+
+
+
+### enumerate 내장함수
+
+인덱스(index)와 값(value)을 함께 활용 가능합니다.
+
+```python
+lunch = ['짜장면', '초밥', '피자']
+# enumerate() 에 의해 반환되는 인덱스와 값(value)를 함께 출력하는 for 반복문을 작성해봅시다.
+for idx, menu in enumerate(lunch):
+    print(idx, menu)
+    
+0 짜장면
+1 초밥
+2 피자
+
+print(enumerate(lunch))
+print(list(enumerate(lunch)))
+
+#<enumerate object at 0x102e0db40>
+#[(0, '짜장면'), (1, '초밥'), (2, '피자')]
+
+print(list(enumerate(lunch))[0])
+print(type(list(enumerate(lunch))[0]))
+
+#(0, '짜장면')
+#<class 'tuple'>
+
+# enumerate() 에 의해 반환되는 인덱스가 1로 시작하여 카운트되는 for 반복문을 작성해봅시다.
+for idx, menu in enumerate(lunch, start=1):
+    print(idx, menu)
+    
+1 짜장면
+2 초밥
+3 피자
+
+```
+
+
+
+## 반복제어(break, continue, for-else)
+
+### break
 
