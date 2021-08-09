@@ -189,4 +189,3 @@ for i in range(1, user_input + 1):	# 1부터 입력값까지의 범위
     num = num + i	# 총합 구하기
 print(num)
 ```
-
