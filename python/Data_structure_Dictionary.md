@@ -68,3 +68,75 @@ my_dict.pop('melon') # -> KeyError: 'melon'
 
 - can be created by placing a comma-separated list of `key:value` pairs within braces.
 
+
+
+with **for statement**
+
+```python
+# 0. dictionary 순회 (key 활용)
+for key in dict:
+    print(key)
+    print(dict[key])
+
+
+# 1. `.keys()` 활용
+for key in dict.keys():
+    print(key)
+    print(dict[key])
+
+
+# 2. `.values()` 활용
+# 이 경우 key는 출력할 수 없음
+for val in dict.values():
+    print(val)
+
+
+# 3. `.items()` 활용
+for key, val in dict.items():
+    print(key, val)
+```
+
+```python
+grades = {'john':  80, 'eric': 90, 'justin': 90}
+
+print(grades)
+print(grades.values())
+print(grades.keys())
+print(grades.items())
+
+# {'john': 80, 'eric': 90, 'justin': 90}
+# dict_values([80, 90, 90])
+# dict_keys(['john', 'eric', 'justin'])
+# dict_items([('john', 80), ('eric', 90), ('justin', 90)])
+
+for grade in grades:
+    print(grade, grades[grade])
+    
+# => john 80
+# => eric 90
+# => justin 90
+    
+for grade in grades.keys():
+    print(grade, grades[grade])
+    
+# => john 80
+# => eric 90
+# => justin 90
+    
+for grade in grades.values():
+    print(grade)
+
+# => 80
+# => 90
+# => 90
+
+for key, value in grades.items():
+    print(key, value)
+
+# => john 80
+# => eric 90
+# => justin 90
+```
+
+
+
