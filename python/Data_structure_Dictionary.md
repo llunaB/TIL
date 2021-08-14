@@ -68,6 +68,16 @@ my_dict.pop('melon') # -> KeyError: 'melon'
 
 
 
+##### 딕셔너리 선언
+
+```python
+>>> newdict = dict( alice = 5, bob = 20, tony= 15, suzy = 30)
+>>> newdict
+{'alice': 5, 'bob': 20, 'tony': 15, 'suzy': 30}
+```
+
+
+
 with **for statement**
 
 ```python
@@ -135,6 +145,3 @@ for key, value in grades.items():
 # => eric 90
 # => justin 90
 ```
-
-
-
