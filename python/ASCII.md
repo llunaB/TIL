@@ -1,5 +1,7 @@
 # 아스키 변환 함수
 
+<img src = "ASCII.assets/ascii-table-alpharithms-scaled.jpg">
+
 ### ord()
 
 ```python
@@ -12,12 +14,12 @@ for i in range(97, 123):
 # a b c d e f g h i j k l m n o p q r s t u v w x y z
 ```
 
-
-
 ### chr()
 
 ```python
 chr(65) # A
 chr(90) # Z
 ```
+
+
 
