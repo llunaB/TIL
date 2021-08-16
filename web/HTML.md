@@ -26,9 +26,9 @@ https://developer.mozilla.org/ko/
 
 
 
-## 웹 표준
+## 웹 표준 : WHATWG
 
-- from W3C to WHATWG
+- from W3C to **WHATWG**
 
 - https://whatwg.org/
 
@@ -36,14 +36,11 @@ https://developer.mozilla.org/ko/
 
 ## Browser
 
-- Can I use?
-- https://caniuse.com/
+- Can I use? https://caniuse.com/
 
 
 
-## HTML
-
-Hyper Text Markup Language
+## HTML : **Hyper Text Markup Language**
 
 웹 페이지를 작성하기 위한 언어. 웹 콘텐츠의 **'의미' 와 '구조'** 를 정의
 
@@ -55,14 +52,18 @@ Hyper Text Markup Language
 
 ## HTML 기본구조
 
-- Head
-- Body
+- html
+  - Head
+  - Body
+    - header
+    - section
+    - footer
 
-
+  
 
 #### Open Graph Protocol
 
-메타태그 등 다양한 기능을 <head> </head>에 넣을 수 있다.
+메타태그 등 다양한 기능을 <head></head>에 넣을 수 있다.
 
 - https://metatags.io/
 
@@ -81,14 +82,18 @@ HTML은 DOM 구조로 이루어진다. 부모 관계, 형제 관계
 #### 요소(element)
 
 - 태그는 컨텐츠를 감싸는 것으로 그 정보의 성격과 의미를 정의
+- 열고 닫는 태그로 구성, (모두 그런 것은 아니다)
+- 내용이 있는 태그와 없는 태그
+  - 있다
+  - 없다 : br, img, hr, input, link, meta
 
 
 
 #### 속성(attribute)
 
 - 태그 내에 사용하며 태그 별로 다르다
-- `href` - 속성명
-- `https://google.com` - 속성값
+  - `href` - 속성명
+  - `https://google.com` - 속성값
 
 ```html
 <a href="https://google.com">
@@ -100,7 +105,7 @@ HTML은 DOM 구조로 이루어진다. 부모 관계, 형제 관계
 - 태그 상관없이 사용하는 HTML Global Attribute
 
 ```bash
-id. class / hidden / lang / style / tabindex / title
+id, class / hidden / lang / style / tabindex / title
 ```
 
 
@@ -134,24 +139,27 @@ id. class / hidden / lang / style / tabindex / title
 
 의미를 담은 구조만 잡는 태그
 
-- 검색엔진 최적화를 위해 메타태그, 시맨틱 태그 쓰려는 노력 해야
-
+- **검색엔진 최적화(SEO)를 위해 메타태그, 시맨틱 태그 쓰려는 노력 해야**
 - Non semantic (div, span) / **Semantic (h1, table)** 
-
 - 가장 잘 활용한 경우? 구글 뉴스! https://news.google.com/topstories?hl=ko&gl=KR&ceid=KR:ko
+- 예시
 
 ```
-header
-nav
-aside
-section
-article
-footer
+header : 문서 전체나 섹션의 헤더
+nav : 네비게이션
+aside : 사이드 공간
+section : 문서의 일반적인 부분, 컨텐츠의 그룹
+article : 문서, 페이지, 사이트 안에서 독립적으로 구분되는 영역
+footer : 푸터
 ```
 
 <img src="html.assets/2.png">
 
  
+
+------
+
+
 
 ## HTML 문서 구조화
 
@@ -159,17 +167,23 @@ footer
 
 - `<span> vs <div>`
 
+
+
 #### group
 
 - `<p>, <hr>, <ol>,<ul>, <pre>, <blockquote>, <div>`
 
+
+
 #### text
 
 - `<a>`
-- `<b> vs <strong>` : 둘 다 굵게 하지만 strong은 실제 의미까지 강조, `<strong>`의 경우 웹 접근성 강조
+- `<b> vs <strong>` : 둘 다 굵게 하지만 strong은 실제 의미까지 강조**, `<strong>`의 경우 웹 접근성 강조**
   - 네이버 널리 : https://nuli.navercorp.com/
 - `<i> vs <em>`
 - `<span>,<br>,<img>`
+
+
 
 #### table
 
@@ -177,21 +191,21 @@ footer
 - <thead>, <tbody>, <tfoot>
 - <caption>
 - colspan, rowspan
-- scope 속설
+- scope 속성
 - <col>, <colgroup>
 
-#### form
+
+
+#### form - 중요!!!
 
 - 서버에서 처리될 데이터를 제공하는 역할
 - 기본 속성
   - action : 어디로 데이터를 보낼 것인가?
   - method
 
-##### input
+##### input tag - form 내에 들어간다
 
-- form안에 들어가는 imput tag 
-- https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input
-
+- https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input 다양한 input type 확인!
 - <label> 서식 입력 요소의 캡션
 - <input> 공통 속성
   - name, placeholder
@@ -260,8 +274,3 @@ footer
   
 </html>
 ```
-
-
-
-
-

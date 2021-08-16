@@ -4,11 +4,7 @@
 
 
 
-## 구조
-
-### **form > label + input**
-
-
+## 구조 : **form > label + input**
 
 <img src="html_form.assets/image-20210803160608923.png">
 
@@ -103,4 +99,3 @@
     <input type="submit" value="로그인">
   </form>
 ```
-

@@ -8,9 +8,7 @@ https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfb
 
 ## SETTING
 
-#### 파일방식 
-
-- 다운로드 받아 직접 넣는다
+#### 1. 파일방식 : 다운로드 받아 직접 넣는다
 
 ```html
 <!DOCTYPE html>
@@ -30,9 +28,7 @@ https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfb
 </html>
 ```
 
-#### CDN 방식
-
-> Content Delivery Network
+#### 2. CDN 방식 : Content Delivery Network
 
 - 전 세계에 분산된 서버로 이루어진 플랫폼
 - 미국 서버에 접속하지 않아도 된다.
@@ -67,16 +63,12 @@ https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfb
 
 여러가지 브라우저가 지니고 있는 기본 `user agent stylesheet` 를 초기화한다.
 
-#### Normalize CSS
-
-> gentle solution
+#### 1. Normalize CSS : gentle solution
 
 - W3C 기준에 맞지 않으면 차이가 있는 브라우저를 수정한다.
 - 부트스트랩 기본설정
 
-#### Reset CSS
-
-> agressive solution
+#### 2. Reset CSS: agressive solution
 
 - 모든 기본설정 리셋, 부작용 있어 쓰지 않는다
 
@@ -84,7 +76,7 @@ https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfb
 
 ## spacing
 
-![image-20210804150102927](/Users/euijinpang/TIL/web/Bootstrap.assets/image-20210804150102927.png)
+<img src="Bootstrap.assets/image-20210804150102927.png">
 
 <img src = "Bootstrap.assets/image-20210804150136803.png">
 
@@ -92,50 +84,69 @@ https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfb
 
 
 
+# Flexbox in Bootstrap
 
+- d-flex를 클래스로 선언하고 시작한다.
 
-## Flexbox
-
-```css
-class = "d-flex"
-
-.d-flex {
+```html
+<style>
+  .d-flex {
   display: flex !important;
-}
+  }
+  .justify-content-start{
+    justify-content: flex-start !important;
+  }
+  .justify-content-center{
+    justify-content: center !important;
+  }
+  .justify-content-between{
+    justify-content: space-between !important;
+  }
+  .justify-content-around{
+    justify-content: space-around !important;
+  }
+  .justify-content-evenly{
+    justify-content: space-evenly !important;
+  }
+  .align-items-start{
+    align-items: flex-start !important;
+  }
+  .align-items-center{
+    align-items: center !important;
+  }
+</style>
+
+<div class="d-flex justify-content-start"></div>
 ```
 
 https://getbootstrap.com/docs/5.0/utilities/flex/#enable-flex-behaviors
 
-
-
-
-
-## Grid System
+# Bootstrap Grid System
 
 > flexbox grid / 12 column system / 6 default responsive tiers
 
-- 12 컬럼 그리드, 6개의 기준점
+- **12 컬럼 그리드, 6개의 기준점 (12 columns & 6 grid breakpoints)**
 - container, rows, column 으로 컨텐츠를 배치하고 정렬
 
 - Bootstap Grid system은 flexbox로 제작된다.
-  - **12 columns**
-  - **6 grid breakpoints**
+  
+  
 
-
-
-### row (class)
+## row (class)
 
 - columns의 wrapper
 
-- 12개의 컬럼으로 구성
+- 12개의 컬럼으로 구성, container 안의 row 안에 12개의 columns
 
+## gutters (class)
 
+- column 사이의 padding
 
-### col, col-* (class)
+## col, col-* (class)
 
-- row 당 가능한 12개 중 사용하려는 columns의 수
-- columns의 너비는 백분율로 설정되므로 항상 부모 요소를 기준으로 유동적으로 크기 조정
--  grid  layout에서 내용은 반드시 columns 안에 있어야 하고, 오직 columns 만이 row 바로 아래의 자식일 수 있다.
+- **row 당 가능한 12개 중 사용하려는 columns의 수**
+- columns의 너비는 **백분율**로 설정되므로 항상 부모 요소를 기준으로 유동적으로 크기 조정
+-  grid  layout에서 내용은 반드시 columns 안에 있어야 하고, **오직 columns 만이 row 바로 아래의 자식일 수 있다.**
 
 
 
@@ -265,9 +276,9 @@ https://getbootstrap.com/docs/5.0/utilities/flex/#enable-flex-behaviors
 
 - 특정 픽셀 조건에 대한 지점
 - viewport 너비가 필셀 단위이고 글꼴 크기에 따라 변하지 않으므로 em, rem이 아닌 px를 사용
-- 주로 md, lg
+- 주로 md, lg 사용
 
-![image-20210804154153786](/Users/euijinpang/TIL/web/Bootstrap.assets/image-20210804154153786.png)
+<img src="Bootstrap.assets/image-20210804154153786.png">
 
 ```html
 <div class="container">      
@@ -293,7 +304,7 @@ https://getbootstrap.com/docs/5.0/utilities/flex/#enable-flex-behaviors
 
 
 
-### nesting (class)
+## nesting (class) 중첩
 
 - row > col > row > col
 
@@ -319,9 +330,9 @@ https://getbootstrap.com/docs/5.0/utilities/flex/#enable-flex-behaviors
 
 
 
-### offset (class)
+## offset (class)
 
--  해당 칸 이후로 시작
+-  해당 칸 이후 시작
 
 ![image-20210804155950696](/Users/euijinpang/TIL/web/Bootstrap.assets/image-20210804155950696.png)
 
