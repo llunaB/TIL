@@ -78,11 +78,11 @@ h2 {
 - 자식, 자손 결합자, 일반 형제 결합자, 인접 형제 결합자
 
 ```css
-/* 자손 결합자 : 하위의 모든 요소 - 예시에서 span 1개 */
+/* 자손 결합자 : 하위의 모든 요소 - 예시에서 span 2개 */
 div span {
 	color : green;
 }
-/* 자식 결합자 : 바로 아래 요소 - 예시에서 span 2개 */
+/* 자식 결합자 : 바로 아래 요소 - 예시에서 span 1개 */
 div>span {
 	color : green;
 }
@@ -145,6 +145,7 @@ p + span {
 ```css
 p {color: #000}
 p {color: rgba(0, 0, 0, 0.5);} /* 투명도 alpha 추가 */
+p {color: rgb(0, 0, 0)
 ```
 
 # Box model

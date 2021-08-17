@@ -114,9 +114,23 @@ https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfb
   .align-items-center{
     align-items: center !important;
   }
+  .flex-wrap{
+    flex-wrap: wrap;
+  }
+  .align-self-start{
+    align-self: flex-start;
+  }
+  .order-0{
+    order: 0;
+  }
+  .order-1{
+    order: 1;
+  }
 </style>
 
-<div class="d-flex justify-content-start"></div>
+<div class="d-flex justify-content-start">
+
+</div>
 ```
 
 https://getbootstrap.com/docs/5.0/utilities/flex/#enable-flex-behaviors

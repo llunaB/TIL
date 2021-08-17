@@ -1,5 +1,3 @@
-
-
 # CSS Layout
 
 > - display 
@@ -86,7 +84,7 @@
 
 ```css
 .flex-container {
-  diaplay:flex;
+  display:flex;
   /* inline-flex는 아이템 사이즈만큼만 부모요소 정해짐, flex 영역을 인라인 블록으로 사용 */
 }
 ```
@@ -189,23 +187,8 @@
         font-size: 150px;
 
       }
-  
-  align-content: flex-start;
-  
-	align-content: flex-end;
-  
-  flex-direction: column-reverse;
-	align-content: center;
-  
-  flex-direction: column-reverse;
-	flex-wrap: wrap-reverse;
-	justify-content: center;
-	align-content: space-between;
-
 }
 ```
-
-
 
 
 
@@ -304,7 +287,7 @@ justify-content: space-evenly; 내외부 요소 모두 동일
   order: -1;
 }
 .item3 {
-  order: 2;
+  order: 1;
 }
 ```
 
