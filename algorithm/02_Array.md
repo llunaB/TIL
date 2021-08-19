@@ -98,8 +98,9 @@ print(arr2)
 - n * m 개의 모든 원소를 빠짐없이 조사
 
 ```python
-di = [0, 1, 0, -1]
-dj = [1, 0, -1, 0]
+# 상하좌우 (내가 정함)
+di = [-1, 0, 1, 0]
+dj = [0, 1, 0, -1]
 ```
 
 
@@ -110,21 +111,15 @@ dj = [1, 0, -1, 0]
 
 ### 접근 - 행우선순회
 
-```python
-dd
-```
-
-
+![image-20210819000923457](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819000923457.png)
 
 ### 접근 - 열우선순회
 
+![image-20210819000934869](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819000934869.png)
 
+##### 연습문제
 
-### 델타(범위제한 2 가지 방식)
-
-
-
-
+![image-20210819000826428](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819000826428.png)
 
 
 
@@ -132,11 +127,62 @@ dd
 
 ## 부분집합 생성
 
-## 바이너리 서치(Binary Search)
+#### 부분집합 합(Subset Sum) 문제
+
+![image-20210819001204336](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819001204336.png)
+
+
+
+![image-20210819001248669](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819001248669.png)
+
+
+
+![image-20210819004300539](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819004300539.png)
+
+
+
+## 검색(Search)
+
+- 목적하는 탐색 키를 가진 항목을 찾는 것
+  - search key : 자료를 구별하여 인식할 수 있는 키
+- 종류
+  - 순차 검색 (sequential search)
+  - 이진 검색 (binary search)
+  - 해쉬 (hash)
+
+
+
+### 순차 검색
+
+- 일렬로 되어 있는 자료를 순서대로 검색
+- 배열, 연결리스트 등 순차구조로 구현된 자료구조에서 원하는 항목을 찾을 때 유용
+- 검색 대상의 수가 많은경우 수행시간이 급격히 증가
+
+##### 정렬된 경우
+
+![image-20210819004534522](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819004534522.png)
+
+##### 정렬되어 있지 않은 경우
+
+![image-20210819004511531](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819004511531.png)
+
+
+
+### 바이너리 서치(Binary Search), 이진검색
+
+![image-20210819004443289](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819004443289.png)
+
+
+
+
+
+
+
+
+
+
 
 ## 셀렉션 알고리즘(Selection Algorithm)
 
 ## 선택 정렬(Selection Sort)
-
-
 
