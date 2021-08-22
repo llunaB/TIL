@@ -322,3 +322,23 @@ for idx, menu in enumerate(lunch, start=1):
 
 ### break
 
+- 논리적으로 반복문을 빠져나갈 때 사용
+
+### continue
+
+- 이후 코드는 건너뛰고 반복문을 계속 실행할 때 사용
+
+### for else
+
+- for 반복문에서 break문을 만나지 않고 일반적으로 loop가 끝났을 때 수행된다.
+
+```python
+for item in container:
+    if search_something(item):
+        # Found it!
+        process(item)
+        break
+else:
+    # Didn't find anything..
+    not_found_in_container()
+```

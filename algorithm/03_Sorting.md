@@ -111,3 +111,24 @@ def Counting_Sort(A, B, k):
 
 ## 선택정렬 (Selection Sort) 
 
+![image-20210821234010901](/Users/euijinpang/TIL/algorithm/03_Sorting.assets/image-20210821234010901.png)
+
+```python
+def selection_sort(arr):
+  """
+  선택 정렬을 통해 배열 arr을 오름차순 정렬한다.
+  
+  arr: 정렬하고자 하는 배열
+  N: 배열의 길이
+  min_idx: 매 정렬시 최소값의 인덱스
+  """
+  N = len(arr)
+  for i in range(N-1):
+    min_idx = i
+    for j in range(i+1, N):
+      if arr[j] < arr[min_idx]:
+        min_idx = j
+    
+    arr[i], arr[min_idx] = arr[min_idx], arr[i]
+```
+
