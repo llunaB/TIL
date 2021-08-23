@@ -158,7 +158,7 @@ dj = [0, 1, 0, -1]
 
 
 
-##### 정렬된 경우
+### 정렬된 경우  1  3  4  5  6  7  9 
 
 ![image-20210821215309103](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210821215309103.png)
 
@@ -168,7 +168,7 @@ dj = [0, 1, 0, -1]
 
 
 
-##### 정렬되어 있지 않은 경우
+### 정렬되어 있지 않은 경우
 
 ![image-20210821215334726](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210821215334726.png)
 
@@ -179,6 +179,8 @@ dj = [0, 1, 0, -1]
 
 
 ## 바이너리 서치(Binary Search), 이진검색
+
+- O(logn)
 
 - 인덱스 접근이 아닌 경우
 
@@ -213,3 +215,15 @@ def binarySearch (theValue, target):
 ![image-20210819004443289](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819004443289.png)
 
 
+
+
+
+**bubble, selection sort : O(n^2)**
+
+**counting sort : O(n + k)**
+
+
+
+**non-linear & linear search : O(n)**
+
+**binary search : O(logn)**
