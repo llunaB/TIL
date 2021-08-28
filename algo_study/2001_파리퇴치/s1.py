@@ -1,48 +1,22 @@
 import sys
 sys.stdin = open("input.txt")
 
+# max
+
 T = int(input())
-
 for tc in range(1, T+1):
-    N, M = map(int, input().split())
-    data = [list(map(int, input().split())) for _ in range(N)]
-    # print(data)
+    N, M = map(int, input().split()) # N : 배열의 크기 M : 파리채의 크기
+    arr = [list(map(int, input().split())) for _ in range(N)]
 
-    # result = 0
+    max_total = 0
+    for i in range(N):
+        for j in range(N):
+            total = 0
+            for k in range(M):
+                for l in range(M):
+                    if 0 <= i < N - M + 1 and 0 <= j < N - M + 1:
+                        total += arr[i+k][j+l]
+            if max_total < total:
+                max_total = total
 
-    # 파리채의 시작점
-    # for i in range(N-M+1):
-    #     for j in range(N-M+1):
-    #         print(data[i][j], i, j)
-    #         # 임시변수 초기화
-    #         fly = 0
-    #         # 파리채
-    #         for k in range(i, M+i):
-    #             for l in range(j, M+j):
-    #                 fly += data[k][l]
-    #         if result < fly:
-    #             result = fly
-
-    # while문으로 바꿔보기
-    result = 0
-    k, l = 0, 0
-
-    i, j = 0, 0
-    while i < N-M+1:
-        while j < N-M+1:
-            fly = 0
-            k = i
-            while k < M+i:
-                l = j
-                while l < M+j:
-                    fly += data[k][l]
-                    l = l+1
-                k = k+1
-            if result < fly:
-                result = fly
-            j = j + 1
-        i = i+1
-        j = 0
-
-
-    print("#{} {}".format(tc, result))
+    print("#{} {}".format(tc, max_total))
