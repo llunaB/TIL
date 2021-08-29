@@ -42,11 +42,11 @@ A = list(map(int, input().split()))
 # [1, 2, 3, 4, 5]
 ```
 
-![image-20210817223000537](/Users/euijinpang/TIL/algorithm/02. Array.assets/image-20210817223000537.png)
+![image-20210817223000537](02. Array.assets/image-20210817223000537.png)
 
-![image-20210817223019698](/Users/euijinpang/TIL/algorithm/02. Array.assets/image-20210817223019698.png)
+![image-20210817223019698](02. Array.assets/image-20210817223019698.png)
 
-![image-20210817223028320](/Users/euijinpang/TIL/algorithm/02. Array.assets/image-20210817223028320.png)
+![image-20210817223028320](02. Array.assets/image-20210817223028320.png)
 
 
 
@@ -103,23 +103,23 @@ dj = [0, 1, 0, -1]
 
 
 
-![image-20210818214513770](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210818214513770.png)
+![image-20210818214513770](02_Array.assets/image-20210818214513770.png)
 
 
 
 #### 접근 - 행우선순회
 
-![image-20210819000923457](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819000923457.png)
+![image-20210819000923457](02_Array.assets/image-20210819000923457.png)
 
 #### 접근 - 열우선순회
 
-![image-20210819000934869](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819000934869.png)
-
-##### 연습문제
-
-![image-20210819000826428](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819000826428.png)
+![image-20210819000934869](02_Array.assets/image-20210819000934869.png)
 
 
+
+#### 전치행렬
+
+![image-20210829180821983](02_Array, Search.assets/image-20210829180821983-16302281055771.png)
 
 
 
@@ -127,15 +127,15 @@ dj = [0, 1, 0, -1]
 
 #### 부분집합 합(Subset Sum) 문제
 
-![image-20210819001204336](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819001204336.png)
+![image-20210819001204336](02_Array.assets/image-20210819001204336.png)
 
 
 
-![image-20210819001248669](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819001248669.png)
+![image-20210819001248669](02_Array.assets/image-20210819001248669.png)
 
 
 
-![image-20210819004300539](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819004300539.png)
+![image-20210819004300539](02_Array.assets/image-20210819004300539.png)
 
 
 
@@ -160,9 +160,9 @@ dj = [0, 1, 0, -1]
 
 ### 정렬된 경우  1  3  4  5  6  7  9 
 
-![image-20210821215309103](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210821215309103.png)
+![image-20210821215309103](02_Array.assets/image-20210821215309103.png)
 
-![image-20210819004534522](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819004534522.png)
+![image-20210819004534522](02_Array.assets/image-20210819004534522.png)
 
 
 
@@ -170,11 +170,11 @@ dj = [0, 1, 0, -1]
 
 ### 정렬되어 있지 않은 경우
 
-![image-20210821215334726](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210821215334726.png)
+![image-20210821215334726](02_Array.assets/image-20210821215334726.png)
 
 
 
-![image-20210819004511531](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819004511531.png)
+![image-20210819004511531](02_Array.assets/image-20210819004511531.png)
 
 
 
@@ -208,11 +208,11 @@ def binarySearch (theValue, target):
 
 
 
-![image-20210821215438032](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210821215438032.png)
+![image-20210821215438032](02_Array.assets/image-20210821215438032.png)
 
 
 
-![image-20210819004443289](/Users/euijinpang/TIL/algorithm/02_Array.assets/image-20210819004443289.png)
+![image-20210819004443289](02_Array.assets/image-20210819004443289.png)
 
 
 
