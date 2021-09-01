@@ -17,43 +17,43 @@
 
 ---
 
-![image-20210825171246412](/Users/euijinpang/TIL/Queue.assets/image-20210825171246412.png)
+![image-20210825171246412](Queue.assets/image-20210825171246412.png)
 
 ---
 
-![image-20210825171224658](/Users/euijinpang/TIL/Queue.assets/image-20210825171224658.png)
+![image-20210825171224658](Queue.assets/image-20210825171224658.png)
 
 
 
-![image-20210825171323169](/Users/euijinpang/TIL/Queue.assets/image-20210825171323169.png)
+![image-20210825171323169](Queue.assets/image-20210825171323169.png)
 
 
 
-![image-20210825171339344](/Users/euijinpang/TIL/Queue.assets/image-20210825171339344.png)
+![image-20210825171339344](Queue.assets/image-20210825171339344.png)
 
-![image-20210825171351902](/Users/euijinpang/TIL/Queue.assets/image-20210825171351902.png)
+![image-20210825171351902](Queue.assets/image-20210825171351902.png)
 
 
 
 ## 큐 구현
 
-![image-20210825171432259](/Users/euijinpang/TIL/Queue.assets/image-20210825171432259.png)
+![image-20210825171432259](Queue.assets/image-20210825171432259.png)
 
 ![image-20210825171443320](/Users/euijinpang/TIL/Queue.assets/image-20210825171443320.png)
 
 
 
-![image-20210825171457106](/Users/euijinpang/TIL/Queue.assets/image-20210825171457106.png)
+![image-20210825171457106](Queue.assets/image-20210825171457106.png)
 
-![image-20210825171507461](/Users/euijinpang/TIL/Queue.assets/image-20210825171507461.png)
+![image-20210825171507461](Queue.assets/image-20210825171507461.png)
 
-![image-20210825171515377](/Users/euijinpang/TIL/Queue.assets/image-20210825171515377.png)
+![image-20210825171515377](Queue.assets/image-20210825171515377.png)
 
 ## 구현(리스트)
 
 - 크기가 정해진 1차원 리스트로 구현
 
-![image-20210825171530003](/Users/euijinpang/TIL/Queue.assets/image-20210825171530003.png)
+![image-20210825171530003](Queue.assets/image-20210825171530003.png)
 
 ```python  
 Q = [0] * 10 #10칸짜리 큐
@@ -109,12 +109,9 @@ while q:
 
 - front = rear = 0
 
-
-
-![image-20210825095151000](/Users/euijinpang/TIL/Que.assets/image-20210825095151000.png)
-
 ```python
-Q = [0] * 10 #10칸짜리 큐
+#초기 공백 큐 생성
+Q = [0] * 10 
 
 front = 0
 rear = 0
@@ -124,13 +121,29 @@ rear = 0
 
 
 
+![image-20210825095151000](Que.assets/image-20210825095151000.png)
+
+![image-20210826092545711](Queue.assets/image-20210826092545711.png)
+
+![image-20210826092557737](Queue.assets/image-20210826092557737.png)
+
+![image-20210826092610697](Queue.assets/image-20210826092610697.png)
+
+![](Queue.assets/image-20210826092635311.png)
+
+![image-20210826092652099](Queue.assets/image-20210826092652099.png)
+
+![image-20210826092705847](Queue.assets/image-20210826092705847.png)
+
+
+
 
 
 ## 연결 큐
 
 - linked list 로 구현
 
-![image-20210825101609108](/Users/euijinpang/TIL/Que.assets/image-20210825101609108.png)
+![image-20210825101609108](Que.assets/image-20210825101609108.png)
 
 ## 우선순위 큐
 
