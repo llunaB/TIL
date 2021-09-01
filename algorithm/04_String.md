@@ -54,7 +54,7 @@ print(chr(65))
 # [2, 1, 0, 0, 0, 0, 0, .......]
 ```
 
-![image-20210819011821919](/Users/euijinpang/TIL/algorithm/04_String.assets/image-20210819011821919.png)
+![image-20210819011821919](04_String.assets/image-20210819011821919.png)
 
 
 
