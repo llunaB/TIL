@@ -112,23 +112,14 @@ python manage.py startapp <name>
 
 ### 9. 각 앱에 urls.py 파일 만들고 패턴 등록
 
-```python
-from django.urls import path
-
-urlpatterns = [
-    
-]
-```
-
 
 
 ### 10. 공통 html 등록
 
 BASE_DIR
 
-![image-20210902131443056](/Users/euijinpang/TIL/django/django2.assets/image-20210902131443056.png)
+![image-20210902131443056](images/image-20210902131443056.png)
 
 +
 
 루트안에 templates 폴더, 그 안에 base.html 만듦
-
