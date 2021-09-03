@@ -19,7 +19,7 @@ python manage.py migrate
 - **Question** 및 **Choice** model class 제작 (python `classes` 형태)
 
 ```python
-# polls/modes.py
+# polls/models.py
 from django.db import models
 
 class Question(models.Model):
@@ -34,7 +34,8 @@ class Choice(models.Model):
 ```
 
 ```
-여기에서 각 모델은 django.db.models.Model를 하위 클래스로 가지는 클래스입니다.
+여기에서 각 모델은 django.db.models.Model의 영향을 받는 클래스입니다.
+=> (models.Model) 이것을 쓰는 순간, 데이터베이스 통신이 가능해진다.
 
 question_text, pub_date => database field
 각 모델에는 여러 클래스 변수(class variables)가 있으며 각각은 모델의 database field를 나타냅니다.
@@ -268,7 +269,7 @@ $ python manage.py runserver
 
 ### 어드민단에서 앱 관리
 
-- 앱 내의 admin.py 파일에서 model class를 등록해야한다
+- 앱 내의 admin.py 파일에서 `model class`를 등록해야한다
 
 ```python
 # polls/admin.py
@@ -279,3 +280,4 @@ from .models import Question
 
 admin.site.register(Question)
 ```
+
