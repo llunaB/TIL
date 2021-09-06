@@ -53,6 +53,12 @@ source <name>/bin/activate
 deactivate
 ```
 
+- 활성화
+
+```bash
+source venv/bin/activate
+```
+
 
 
 ### 4. 장고 설치
@@ -115,39 +121,9 @@ python manage.py startapp <name>
 
 ![image-20210902191351264](images/image-20210902191351264.png)
 
----
 
-### 순서?
-
-1. 모델 정의
-2. 
 
 ---
-
-
-
-### 8. 메인 urls.py 경로설정
-
-- project folder 내의 urls.py
-- 요청받은 url들을 각각 맞는 앱 내 주소로 보내주는 허브 역할
-
-![image-20210902191818182](images/image-20210902191818182.png)
-
-
-
-### 9. 각 앱에 urls.py 파일 만들고 패턴 등록
-
-
-
-### 10. 공통 html 등록
-
-BASE_DIR
-
-![image-20210902131443056](images/image-20210902131443056.png)
-
-+
-
-루트안에 templates 폴더, 그 안에 base.html 만듦
 
 
 
