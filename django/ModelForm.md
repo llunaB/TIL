@@ -6,7 +6,7 @@
 
 ### 선언하기
 
-![image-20210907233148788](/Users/euijinpang/TIL/ModelForm.assets/image-20210907233148788.png)
+![image-20210907233148788](images/image-20210907233148788.png)
 
 
 
@@ -92,7 +92,7 @@ def update(request, pk):
 
 ### delete view 함수 구조 변경
 
-![image-20210907233954997](/Users/euijinpang/TIL/ModelForm.assets/image-20210907233954997.png)
+![image-20210907233954997](images/image-20210907233954997.png)
 
 
 
@@ -101,7 +101,7 @@ def update(request, pk):
 - 위젯? django의 HTML input element를 표현한다.
 - HTML 렌더링을 처리한다.
 
-![image-20210907233459810](/Users/euijinpang/TIL/ModelForm.assets/image-20210907233459810.png)
+![image-20210907233459810](images/image-20210907233459810.png)
 
-![image-20210907233604527](/Users/euijinpang/TIL/ModelForm.assets/image-20210907233604527.png)
+![image-20210907233604527](images/image-20210907233604527.png)
 

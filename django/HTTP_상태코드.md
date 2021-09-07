@@ -1,5 +1,9 @@
 # HTTP 상태 코드
 
+https://developer.mozilla.org/ko/docs/Web/HTTP/Status
+
+
+
 [`200 OK`](https://developer.mozilla.org/ko/docs/Web/HTTP/Status/200)
 
 요청이 성공적으로 되었습니다. 성공의 의미는 HTTP 메소드에 따라 달라집니다:

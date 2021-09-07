@@ -5,9 +5,9 @@
 - 위젯? django의 HTML input element를 표현한다.
 - HTML 렌더링을 처리한다.
 
-![image-20210907233459810](/Users/euijinpang/TIL/Widget_Bootstrap.assets/image-20210907233459810.png)
+![image-20210907233459810](images/image-20210907233459810.png)
 
-![image-20210907233604527](/Users/euijinpang/TIL/Widget_Bootstrap.assets/image-20210907233604527.png)
+![image-20210907233604527](images/image-20210907233604527.png)
 
 
 
@@ -21,16 +21,19 @@
   - form-control
 - Bootstrap Form의 핵심 클래스를 widget에 작성
 
-![image-20210907234602705](/Users/euijinpang/TIL/Widget_Bootstrap.assets/image-20210907234602705.png)
+![image-20210907234602705](images/image-20210907234602705.png)
 
-![image-20210907234620783](/Users/euijinpang/TIL/Widget_Bootstrap.assets/image-20210907234620783.png)
+![image-20210907234620783](images/image-20210907234620783.png)
+
+
 
 #### Django Bootstrap 5 Library
 
 - django-bootstrap v5
 
   - form class에 bootstrap을 적용시켜주는 라이브러리
-
+  - https://django-bootstrap-v5.readthedocs.io/en/latest/quickstart.html
+  
   
 
 장고 어플리케이션 설치
@@ -53,5 +56,5 @@ pip freeze > requirements.txt
 
 
 
-![image-20210907234729772](/Users/euijinpang/TIL/Widget_Bootstrap.assets/image-20210907234729772.png)
+![image-20210907234729772](images/image-20210907234729772.png)
 

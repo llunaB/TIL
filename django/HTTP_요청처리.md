@@ -1,4 +1,4 @@
-# Handling_HTTP_requests
+# HTTP 요청처리
 
 - Django에서 HTTP 요청을 처리하는 방법
   1. Django shortcut functions
@@ -13,21 +13,17 @@
 
 
 
-
-
-
-
 # 404 page로 만들기
 
-![image-20210907093122367](/Users/euijinpang/TIL/Handling_HTTP_requests.assets/image-20210907093122367.png)
+![image-20210907093122367](images/image-20210907093122367.png)
 
-![image-20210907093144824](/Users/euijinpang/TIL/Handling_HTTP_requests.assets/image-20210907093144824.png)
+![image-20210907093144824](images/image-20210907093144824.png)
 
 
 
-![image-20210907093200967](/Users/euijinpang/TIL/Handling_HTTP_requests.assets/image-20210907093200967.png)
+![image-20210907093200967](images/image-20210907093200967.png)
 
-![image-20210907093209083](/Users/euijinpang/TIL/Handling_HTTP_requests.assets/image-20210907093209083.png)
+![image-20210907093209083](images/image-20210907093209083.png)
 
 
 
@@ -36,8 +32,6 @@
 - put, patch 둘 다 업데이트 Put은 모든 데이터를 다 수정, patch는 부분 수정
 - 장고는 get, post 방식만을 사용한다. html5 form 태그가  post, get 방식만 지원하기 때문이다.
 - post 가 생성 수정 삭제까지 다 하는 셈이다.
-
-
 
 
 
@@ -82,9 +76,3 @@ HTTP는 **요청 메서드**를 정의하여, 주어진 리소스에 수행하�
 - [`PATCH`](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/PATCH)
 
   `PATCH` 메서드는 리소스의 부분만을 수정하는 데 쓰입니다.
-
-
-
-# HTTP 상태 코드
-
-https://developer.mozilla.org/ko/docs/Web/HTTP/Status
