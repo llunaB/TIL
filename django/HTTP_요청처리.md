@@ -27,7 +27,36 @@
 
 
 
-# HTTP verb
+
+
+### View decorators
+
+- Django View 함수가 http GET,POST 요청을 승인할 수 있도록 하는 View decorator
+
+```python
+from django.views.decorators.http import require_http_methods
+
+@require_http_methods(['GET', 'POST']) 
+def create(request):
+  pass
+
+```
+
+- Django View 함수가 POST method 요청만 승인할 수 있도록 하는 View decorator
+
+```python
+from django.views.decorators.http import require_http_methods, require_POST
+
+@require_POST
+def delete(request, pk):
+  ...
+```
+
+
+
+
+
+## HTTP verb
 
 - put, patch 둘 다 업데이트 Put은 모든 데이터를 다 수정, patch는 부분 수정
 - 장고는 get, post 방식만을 사용한다. html5 form 태그가  post, get 방식만 지원하기 때문이다.
@@ -35,7 +64,7 @@
 
 
 
-# HTTP 요청 메서드
+## HTTP 요청 메서드
 
 https://developer.mozilla.org/ko/docs/Web/HTTP/Methods
 
