@@ -4,6 +4,24 @@
 
 
 
+## 기호
+
+- $ : prompt
+- / : Root directory
+- ~ : Home directory
+- . : 현재 위치한 폴더를 지칭
+- .. : 현재 위치한 폴더를 기준으로 상위 폴더를 지칭
+
+
+
+## 단축키
+
+- tab : 파일/폴더 이름 자동완성 기능
+- ctrl+c : 실행중인 프로세스 취소
+- 키보드 방향키 위 아래 : 이전에 입력한 명령어 기록 탐색
+
+
+
 ## 이동
 
 ##### pwd (print working directory)
@@ -67,10 +85,20 @@ touch <file name>
 ##### rm (remove)
 
 - 파일 삭제
-  - 폴더를 삭제하기 위해서는 `-r` 옵션을 정해줘야함(recursive)
-  - `-f` 옵션을 통해 강제로 삭제할 수 있다. => 하지마!!!
 
 ```bash
 rm <file name>
+```
+
+- 지정한 폴더 및 파일 삭제 
+
+```bash
+rm -r <file name>
+```
+
+- 지정한 폴더 및 파일 강제 삭제 => 쓰지 않는다!!
+
+```bash
+rm -rf <file name>
 ```
 
