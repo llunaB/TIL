@@ -96,12 +96,12 @@ def update(request, pk):
 
 
 
-## 위젯 적용하기
 
-- 위젯? django의 HTML input element를 표현한다.
-- HTML 렌더링을 처리한다.
 
-![image-20210907233459810](images/image-20210907233459810.png)
+### MODELFORM 질문
 
-![image-20210907233604527](images/image-20210907233604527.png)
+##### ![image-20210908002951045](images/image-20210908002951045.png)
+
+1. context 가 if else 문과 동일 레벨이어야 "form.is_valid()" 유효성 검사를 통과하지 못한 경우, 사용자가 입력한 올바른 부분까지 데이터를 담아, 그것을 다시 돌려줄 수 있다.
+2. http method에는 POST, GET 방식 외에도 PUT, PATCH 등 다양한 방식이 존재하는데, POST 만 데이터베이스를 건드리기 때문에 POST 외의 방식을 예외처리 해주는 것이 효율적이다.
 
