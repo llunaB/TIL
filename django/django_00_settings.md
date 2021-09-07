@@ -11,6 +11,8 @@ cd <folder name>
 
 
 
+-- Django 설치 전 가상환경 생성 및 활성화
+
 ### 2. 가상환경 생성
 
 ```python
@@ -35,11 +37,11 @@ pip freeze > requirements.txt
 
 
 
-### 3. 가상환경 실행
+### 3. 가상환경 활성화
 
 ```bash
 # Window OS
-source <name>/Scripts/activate
+source <name>(보통 venv)/Scripts/activate
 ```
 
 ```bash
@@ -51,12 +53,6 @@ source <name>/bin/activate
 
 ```python
 deactivate
-```
-
-- 활성화
-
-```bash
-source venv/bin/activate
 ```
 
 
@@ -90,18 +86,12 @@ touch README.md .gitignore
 
 
 
-### 6. 장고 프로젝트 (폴더)생성
+### 6. 장고 프로젝트 생성
 
-- '.' 을 찍어야, 프로젝트 폴더와 manage.py 가 동일경로에 위치
+- '.' 을 찍어야, 프로젝트 폴더와 manage.py 가 동일경로에 위치!!!!!
 
 ```python
 django-admin startproject <name> .
-```
-
-- 잘못 생성하면?
-
-```python
-rm -rf <project name>/ manage.py
 ```
 
 
