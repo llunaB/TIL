@@ -151,6 +151,6 @@ git add <filename>
 git commit -m <message>
 -------Local Repo
 git remote add <name(origin)> <URL>
-git push <name> <branch>
+git push <name(origin)> <branch(master)>
 -------Remote Repo (github)
 ```
