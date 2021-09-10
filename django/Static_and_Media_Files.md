@@ -238,9 +238,7 @@ settings.py에 MEDIA_URL 값이 작성되어 프로젝트에 사용자가 업로
 - 업로드된 파일의 URL => ` settings.MEDIA_URL`
 - 위 URL을 통해 참조하는 파일의 실제 위치 => `settings.MEDIA_ROOT`
 
-![Screen Shot 2021-09-09 at 2.35.10 PM](images/10.png)
-
-
+![Screen Shot 2021-09-10 at 8.18.25 AM](images/11.png)
 
 ## 이미지 업로드하기(create)
 
