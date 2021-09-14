@@ -44,10 +44,24 @@ a2, b2 = balls[1][0], balls[1][1]
 # 두 점 사이의 거리 계산
 width = abs(a2 - a1)
 height = abs(b2 - b1)
-distance = (width ** 2 + height ** 2) ** 0.5
+distance = (width ** 2 + height ** 2) ** 0.5 
+
+# 1사분면
+
 
 # 두 점 사이의 각도 계산
 # 아크탄젠트로 라디안 값을 구하고 이를 다시 각도로 변환
+HOLES = [[0,127],[127,127],[254,127],[0,0],[127,0],[245,0]]
 degree = math.degrees(math.atan(height/width))
+
+# # 1번 - 1사분면
+# angle = degree
+# # 2번 - 2사분면
+# angle = 90 + degree
+# # 3번 - 3사분면
+# angle = 180 + degree
+# # 4번 - 1사분면 + 3사분면
+# angle = 270 + degree
+
 print(degree)
 print(a1, b1, a2, b2, distance)

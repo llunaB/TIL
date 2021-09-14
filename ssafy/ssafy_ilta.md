@@ -76,3 +76,9 @@ degree = π /180 radiaus
 
 ![image-20210912132642855](C:\Users\euiji\AppData\Roaming\Typora\typora-user-images\image-20210912132642855.png)
 
+
+
+
+
+![image-20210912232412684](/Users/euijinpang/TIL/ssafy/ssafy_ilta.assets/image-20210912232412684.png)
+
