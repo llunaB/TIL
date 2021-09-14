@@ -1,4 +1,39 @@
-# SQL & ORM
+# SQL & ORM in Django
+
+### 실행(장고 프로젝트)
+
+- ORM
+
+  ```bash
+  # 가상환경 셋팅(셸 설치)
+  python -m venv venv
+  source venv/bin/activate
+  # 셸플러스 실행
+  python manage.py shell_plus
+  ```
+
+- SQL
+
+  ```bash
+  sqlite3 db.sqlite3
+  ```
+
+
+
+### 비교예시
+
+| SQlite                                                       | ORM                                                          |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| SELECT * FROM users_user;                                    | User.objects.all().query (쿼리는 옵션)                       |
+| INSERT INTO users_user VALUES (102, '길동', '김', 20, '서 울', '010-1234-1234', 100); | User.objects.create(first_name='길동', last_name='홍', age=10, country='제주', phone='010-1234-1234', balance=100,) |
+| SELECT * FROM users_user WHERE id=102;                       | User.objects.get(pk=102)                                     |
+| UPDATE users_user SET first_name='철수'  WHERE id=102;       | user = User.objects.get(pk=102)<br/>user.last_name<br/>user.last_name = '홍'<br/>user.save()<br/> |
+| DELETE FROM users_user WHERE id=101;                         | user = User.objects.get(pk=100)<br/>user.delete()            |
+| SELECT COUNT(*) FROM users_user;                             | len(User.objects.all()<br/>User.objects.count()              |
+| SELECT COUNT(*) FROM users_user WHERE age>=30;               | User.objects.filter(age__gte=30).count()                     |
+| SELECT COUNT(*) FROM users_user WHERE age<=20;               | User.objects.filter(age__lte=20).count()                     |
+
+
 
 ### 1. SQL Query - 7번 미완
 
