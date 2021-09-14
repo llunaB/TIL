@@ -2,11 +2,13 @@
 
 - 서버 형태가 아닌 파일 형식으로 응용프로그램에 넣어 사용하는 비교적 가벼운 데이터베이스
 
-- Django 의 기본값
+- Django 기본설정
 
   - settings.py
 
-  ![image-20210914091820947](/Users/euijinpang/db/SQLite.assets/image-20210914091820947-1632749.png)
+  ![image-20210915004710479](image/image-20210915004710479.png)
+
+
 
 - SQLite는 따로 `primary key` 속성의 컬럼을 작성하지 않으면 값이 자동으로 증가하는 PK 옵션을 가진 `rowid` 컬럼을 정의
 
@@ -162,7 +164,7 @@ SELECT * FROM 테이블 ORDER BY 컬럼1, 컬럼2 DESC;
 
 
 
-### agrregation
+### Agrregation
 
 - COUNT
 - SUM

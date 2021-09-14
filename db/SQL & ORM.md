@@ -37,7 +37,7 @@
 
 ### 1. SQL Query - 7번 미완
 
-![image-20210914202734927](/Users/euijinpang/TIL/db/image/image-20210914202734927.png)
+![image-20210914202734927](image/image-20210914202734927.png)
 
 ```sql
 --1. 테이블 생성
@@ -82,7 +82,7 @@ ALTER TABLE hotels RENAME COLUMN grage TO grade;
 
 ## 2. SQL ORM 비교 - 13번 미완
 
-![image-20210914231709628](/Users/euijinpang/TIL/db/image/image-20210914231709628.png)
+![image-20210914231709628](image/image-20210914231709628.png)
 
 
 
