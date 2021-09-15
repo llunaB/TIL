@@ -35,12 +35,12 @@
 
 
 
-### 1. SQL Query - 7번 미완
+### 1. SQL Query 
 
 ![image-20210914202734927](image/image-20210914202734927.png)
 
 ```sql
---1. 테이블 생성
+-- 1. 테이블 생성
 CREATE TABLE countries(
 room_num TEXT,
 check_in TEXT,
@@ -49,28 +49,30 @@ grage TEXT,
 price INT
 );
 
---2. 데이터 입력
+-- 2. 데이터 입력
 INSERT INTO countries (room_num, check_in, check_out, grage, price) VALUES ('1102', '2020-01-04', '2020-01-08', 'suite', 850);
 INSERT INTO countries (room_num, check_in, check_out, grage, price) VALUES ('B203', '2019-12-31', '2020-01-03', 'suite', 900);
 INSERT INTO countries (room_num, check_in, check_out, grage, price) VALUES ('303', '2020-01-01', '2020-01-03', 'deluxe', 500);
 INSERT INTO countries (room_num, check_in, check_out, grage, price) VALUES ('807', '2020-01-04', '2020-01-07', 'superior', 300);
 
---3. 테이블 이름 변경
+-- 3. 테이블 이름 변경
 ALTER TABLE countries RENAME TO hotels;
 
---4. 객실 가격을 내림차순으로 정렬하여 상위 2개의 room_num과 price 조회
+-- 4. 객실 가격을 내림차순으로 정렬하여 상위 2개의 room_num과 price 조회
 SELECT room_num, price FROM hotels ORDER BY price DESC LIMIT 2;
 
---5. grade별 분류하고 분류된 grade 개수를 내림차순으로 조회
-SELECT COUNT(DISTINCT grade) FROM hotels ORDER BY grade DESC;
+✅-- 5. grade별 분류하고 분류된 grade 개수를 내림차순으로 조회
+✅-- GROUP BY 사용 
+SELECT grade, COUNT(grade) FROM hotels GROUP BY grade ORDER BY COUNT(grade) DESC;
 
---6. 객실 위치가 지하 혹은 등급이 deluxe인 객실의 모든 정보 조회
+-- 6. 객실 위치가 지하 혹은 등급이 deluxe인 객실의 모든 정보 조회
 SELECT * FROM hotels WHERE room_num LIKE 'B%' OR grade='suite';
 
---7. 지상층 객실이면서 2020년 1월 4일에 체크인한 객실의 목록을 price 오름차순으로 조회
-SELECT * FROM hotels ORDER BY price WHERE room_num LIKE '[^B]' AND check_in='2020-01-04';
+✅-- 7. 지상층 객실이면서 2020년 1월 4일에 체크인한 객실의 목록을 price 오름차순으로 조회
+✅-- NOT LIKE 사용
+SELECT * FROM hotels WHERE room_num NOT LIKE 'B%' AND check_in='2020-01-04'ORDER BY price;
 
---추가) 열 이름 변경
+-- 추가) 열 이름 변경
 ALTER TABLE hotels RENAME COLUMN grage TO grade;
 ```
 
@@ -80,7 +82,7 @@ ALTER TABLE hotels RENAME COLUMN grage TO grade;
 
 
 
-## 2. SQL ORM 비교 - 13번 미완
+## 2. SQL ORM 비교 
 
 ![image-20210914231709628](image/image-20210914231709628.png)
 
@@ -204,106 +206,133 @@ ALTER TABLE hotels RENAME COLUMN grage TO grade;
     ```
 
 
-9. 이름이 '김옥자'인 사람의 행정구역을 경기도로 수정하시오.
+9. **❇️ 이름이 '김옥자'인 사람의 행정구역을 경기도로 수정하시오.**
 
-	  ```python
-    # orm
-   user = User.objects.get(first_name='옥자', last_name='김')
-    user.country = '경기도'
+
+   1. **방법 1번 - 하나의 인스턴스를 수정한다**.
+
+   ```python
+   # orm
+   user = User.objects.filter(first_name='옥자', last_name='김')[0]
+   user.country = '경기도'
    user.save()
    ```
-   
-    ```sql
-    -- sql
-    UPDATE users_user SET country = '경기도' WHERE first_name = '옥자' AND last_name = '김';
-    ```
+
+   2. **방법 2번 - filter로 가져온 쿼리셋을 수정한다. - Update 메소드 사용**
+
+   ```python
+   #orm
+   user.objects.filter(first_name='옥자', last_name='김').update(country='경기도')
+   ```
+
+   3. **방법 3번 - get을 써도 단일데이터면 괜찮다. 그러나 중복가능성 있음.**
+
+   ```python
+   # orm
+   user = User.objects.get(first_name='옥자', last_name='김')
+   user.country = '경기도'
+   user.save()
+   ```
+
+   ```sql
+   -- sql
+   UPDATE users_user SET country = '경기도' WHERE first_name = '옥자' AND last_name = '김';
+   ```
+
 10. 이름이 '백진호'인 사람을 삭제하시오.
 
-	  ```python
-    # orm
-    user = User.objects.get(first_name='진호', last_name='백')
-    user.delete()
-      ```
-    
-    ```sql
-    -- sql
-    DELETE FROM users_user WHERE first_name='진호' AND last_name='백'; 
-    ```
+     ```python
+     # orm
+     user = User.objects.get(first_name='진호', last_name='백')
+     user.delete()
+     ```
+
+     ```sql
+     -- sql
+     DELETE FROM users_user WHERE first_name='진호' AND last_name='백'; 
+     ```
+
 11. balance를 기준으로 상위 4명의 first_name, last_name, balance를 조회하시오.
 
-	  ```python
+       ```python
     # orm
     User.objects.order_by('-balance')[:4].values('first_name','last_name', 'balance')
-      ```
+       ```
+       ```sql
+       -- sql
+       SELECT first_name, last_name, balance FROM users_user ORDER BY balance DESC LIMIT 4;
+       ```
     
-    ```sql
-    -- sql
-    SELECT first_name, last_name, balance FROM users_user ORDER BY balance DESC LIMIT 4;
-    ```
 12. phone에 '123'을 포함하고 age가 30 미만인 정보를 조회하시오.
 
-	  ```python
+    ```python
     # orm
-    User.objects.filter(phone__contains='123', age__lte=30)
+    User.objects.filter(phonecontains='123', agelte=30)
+    ```
+      ```sql
+      -- sql
+      SELECT * FROM users_user WHERE phone LIKE '%123%' AND age < 30;
       ```
     
-    ```sql
-    -- sql
-    SELECT * FROM users_user WHERE phone LIKE '%123%' AND age < 30;
-    ```
-13. phone이 '010'으로 시작하는 사람들의 행정구역을 중복없이 조회하시오.
+13. **❇️ phone이 '010'으로 시작하는 사람들의 행정구역을 중복없이 조회하시오.**
 
-	  ```python
-    # orm ?????
-    User.objects.filter(phone__startswith='010').values('country
-    ')
+      - `field lookup` 사용
+      - 중복없이 조회 : `distinct` 메소드 사용
+
+      ```python
+      # orm
+      User.objects.filter(phone__startswith='010').values('country
+      ').distinct()
       ```
-    
-    ```sql
-    -- sql
-    SELECT DISTINCT country FROM users_user WHERE phone LIKE '010%';
-    ```
+
+      ```sql
+      -- sql
+      SELECT DISTINCT country FROM users_user WHERE phone LIKE '010%';
+      ```
+
 14. 모든 인원의 평균 age를 구하시오.
 
-	  ```python
+    ```python
     # orm
     User.objects.aggregate(Avg('age'))
+    ```
+      ```sql
+      -- sql
+      SELECT AVG(age) FROM users_user;
       ```
     
-    ```sql
-    -- sql
-    SELECT AVG(age) FROM users_user;
-    ```
 15. 박씨의 평균 balance를 구하시오.
 
-	  ```python
+    ```python
     # orm
     User.objects.filter(last_name='박').aggregate(Avg('balance'))
+    ```
+      ```sql
+      -- sql
+      SELECT AVG(balance) FROM users_user WHERE last_name = '박';
       ```
     
-    ```sql
-    -- sql
-    SELECT AVG(balance) FROM users_user WHERE last_name = '박';
-    ```
 16. 경상북도에 사는 사람 중 가장 많은 balance의 액수를 구하시오.
 
-	  ```python
+    ```python
     # orm
     User.objects.filter(country='경상북도').aggregate(Max('balance'))
+    ```
+      ```sql
+      -- sql
+      SELECT MAX(balance) FROM users_user WHERE country='경상북도';
       ```
     
-    ```sql
-    -- sql
-    SELECT MAX(balance) FROM users_user WHERE country='경상북도';
-    ```
 17. 제주특별자치도에 사는 사람 중 balance가 가장 많은 사람의 first_name을 구하시오.
 
-	  ```python
-    # orm
-    User.objects.filter(country='제주특별자치도').order_by('-balance')[:1].values('first_name')
-      ```
+    ```python
+    # orm 3가지
     
-    ```sql
-    -- sql
-    SELECT first_name FROM users_user WHERE country='제주특별자치도' ORDER BY balance DESC LIMIT 1;
+    User.objects.filter(country='제주특별자치도').order_by('-balance')[:1].values('first_name')
+    User.objects.filter(country='제주특별자치도').order_by('-balance')[0].values('first_name')
+    User.objects.filter(country='제주특별자치도').order_by('-balance').first().values('first_name')
     ```
+      ```sql
+      -- sql
+      SELECT first_name FROM users_user WHERE country='제주특별자치도' ORDER BY balance DESC LIMIT 1;
+      ```
