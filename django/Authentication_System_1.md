@@ -169,6 +169,35 @@
 
 
 
+### 회원가입과의 차이점?
+
+![image-20210916101749247](/Users/euijinpang/TIL/django/Authentication_System_1.assets/image-20210916101749247.png)
+
+![image-20210916101818107](/Users/euijinpang/TIL/django/Authentication_System_1.assets/image-20210916101818107.png)
+
+- 회원가입시에는 ID, PASSWORD 받는정보와 DB 저장하는 정보가 같으면 `modelForm `사용
+- 로그인의 경우 입력은 ID, PASSWORD 지만 저장하는 것은 `session id` 이므로 `modelForm`이 아닌 `Form` 을 사용
+  - 인자로 `request` 와 `request.POST` 를 받는다
+    - `request` 는 ... 사용자 정보 외의 다른 정보까지 포함한 변수
+    - `request.POST` 는 사용자 정보만 (username, password)
+
+![image-20210916103137815](/Users/euijinpang/TIL/django/Authentication_System_1.assets/image-20210916103137815.png)
+
+- form.save() 가 아닌 `auth_login `사용 (login에서 명칭 변경)
+
+![image-20210916101452617](/Users/euijinpang/TIL/django/Authentication_System_1.assets/image-20210916101452617.png)
+
+### 로그인 분기처리
+
+- 로그인한 사람이면 못들어오게 막는다.
+- next parameter 가 있는 경우와 없는 경우로 나눈다.
+
+![image-20210916111818018](/Users/euijinpang/TIL/django/Authentication_System_1.assets/image-20210916111818018.png)
+
+
+
+
+
 ## 로그아웃
 
 - Session을 Delete하는 로직
@@ -218,4 +247,4 @@
 - @require_POST 작성된 함수에 @login_required를 함께 사용하는 경우 에러 발생
 - 1. redirect 과정에서 POST 데이터 손실
   2. redirect는 GET 방식으로 요청됨
-- 해결 : login_required 는 GET method request를 처리할 수 있는 view 함수에서만 사용해야함
+- 해결 : @login_required 는 GET method request를 처리할 수 있는 view 함수에서만 사용해야함

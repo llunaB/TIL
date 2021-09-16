@@ -7,6 +7,8 @@
 
 
 
+
+
 ![image-20210915233334727](image/2-1.png)
 
 - templates/accounts
@@ -15,6 +17,8 @@
   - change_password.html
 
 
+
+![image-20210916142036069](/Users/euijinpang/TIL/django/Authentication_System_2.assets/image-20210916142036069.png)
 
 ## 회원가입
 
@@ -37,3 +41,4 @@
 ## 비밀번호 변경
 
 ![image-20210915233251084](image/2-5.png)
+
