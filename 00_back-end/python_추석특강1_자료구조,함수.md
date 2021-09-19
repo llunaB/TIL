@@ -1,5 +1,7 @@
 # 추석특강~oh~~
 
+이미지 경로는 맞는데 왜 안들어갈까
+
 ## 프린트문
 
 - print 요소 띄어쓰기 없이 붙여서 출력하기
@@ -222,15 +224,13 @@ while True:
     break
 ```
 
-![image-20210919111029524](./python_추석특강.assets/image-20210919111029524.png)
-
-
+<img src="python_추석특강.assets/image-20210919111029524.png">
 
 - 연습문제
 
-![image-20210919113011041](./python_추석특강.assets/image-20210919113011041.png)
+<img src="python_추석특강.assets/image-20210919113011041.png">
 
-![image-20210919113818002](./python_추석특강.assets/image-20210919113818002.png)
+![image-20210919113818002](python_추석특강.assets/image-20210919113818002.png)
 
 
 
