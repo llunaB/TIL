@@ -1,6 +1,6 @@
 # 추석특강~oh~~
 
-이미지 경로는 맞는데 왜 안들어갈까
+
 
 ## 프린트문
 
@@ -224,13 +224,13 @@ while True:
     break
 ```
 
-<img src="python_추석특강.assets/image-20210919111029524.png">
+<img src="images/image-20210919111029524.png">
 
 - 연습문제
 
-<img src="python_추석특강.assets/image-20210919113011041.png">
+<img src="images/image-20210919113011041.png">
 
-![image-20210919113818002](python_추석특강.assets/image-20210919113818002.png)
+![image-20210919113818002](images/image-20210919113818002.png)
 
 
 
@@ -305,7 +305,7 @@ def printSumAvg(x, y, z):
 
 - 함수는 하나의 기능만 가진다! for문은 따로 써주자
 
-![image-20210919131552040](./python_추석특강.assets/image-20210919131552040.png)
+![image-20210919131552040](images/image-20210919131552040.png)
 
 
 
@@ -391,7 +391,7 @@ a.count(30) >>> 2
 del 딕셔너리 ["키"]
 ```
 
-![image-20210919134022694](./python_추석특강.assets/image-20210919134022694.png)
+![image-20210919134022694](images/image-20210919134022694.png)
 
 - 딕셔너리 함수
 
@@ -401,7 +401,7 @@ del 딕셔너리 ["키"]
 딕셔너리.values()
 ```
 
-![image-20210919134354603](./python_추석특강.assets/image-20210919134354603.png)
+![image-20210919134354603](images/image-20210919134354603.png)
 
 
 
