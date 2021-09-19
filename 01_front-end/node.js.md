@@ -40,8 +40,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 nvm --version
 ```
 
-
-
 - nvs 확인
 
 ```bash

@@ -30,11 +30,12 @@
 
   - ```css
     @import url("./box.css");
+    
     div {
       color: red;
     }
     ```
-
+    
   - 직렬방식 : html 에서 상위 css 가 연결되어있어야만 작동한다.
   - main.css 양이 많을 경우 먼저 처리하는 과정에서 시간이 오래 걸리므로 일부러 늦출때 사용
 
