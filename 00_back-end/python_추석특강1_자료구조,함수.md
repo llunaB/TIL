@@ -303,7 +303,7 @@ def printSumAvg(x, y, z):
     return print(f"합계: {total} 평균: {avg}")
 ```
 
-- 함수는 하나의 기능만 가진다!
+- 함수는 하나의 기능만 가진다! for문은 따로 써주자
 
 ![image-20210919131552040](python_추석특강.assets/image-20210919131552040.png)
 
