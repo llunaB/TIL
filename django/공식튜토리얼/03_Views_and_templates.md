@@ -243,4 +243,3 @@ urlpatterns = [
 ```html
 <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
 ```
-

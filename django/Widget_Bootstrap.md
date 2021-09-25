@@ -57,4 +57,3 @@ pip freeze > requirements.txt
 
 
 ![image-20210907234729772](images/image-20210907234729772.png)
-
