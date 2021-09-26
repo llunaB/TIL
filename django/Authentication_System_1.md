@@ -314,6 +314,7 @@ django.contrib.auth.context_processors.auth
 # accounts/views.py
 from djanco.contrib.auth import logout as auth_logout
 
+@require_POST
 def logout(request):
   auth_logout(request)
   return redirect('articles:index')
@@ -375,6 +376,13 @@ def logout(request):
   if request.user.is_authenticated:
     auth_logout(request)
     return redirect('articles:index')
+  
+# accounts/views.py => 인증된 사용자(로그인 상태)만 회원탈퇴 하도록 처리
+def delete(request):
+  if request.user.is_authenticated:
+    request.user.delete()
+    auth_logout(request)
+  return redirect('articles:index')
 ```
 
 
@@ -396,6 +404,8 @@ from django.contrib.auth.decorators import login_required
 def my_view(request):
   pass
 ```
+
+
 
 ### "next" query string parameter
 

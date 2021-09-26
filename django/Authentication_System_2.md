@@ -80,7 +80,7 @@ def update(request):
 
 
 
-### UsrChangeForm 주의사항
+### UserChangeForm 주의사항
 
 일반 사용자가 접근해서는 안될 정보까지 모두 수정이 가능해짐
 
@@ -103,7 +103,7 @@ from django.contrib.auth import get_user_model
 class CustomUserChangeForm(UserChangeForm):
   class Meta:
     model = get_user_model()
-    fields = ('email', 'first_name', 'last_name'),
+    fields = ('email', 'first_name', 'last_name',)
 ```
 
 ```python
@@ -158,7 +158,7 @@ def change_password(request):
     if form.is_valid():
       form.save()
       # 세션무효화방지 추가
-      update_settion_auth_hash(request, form.user)
+      update_session_auth_hash(request, form.user)
       return redirect('articles:index')
   else:
     form = PasswordChangeForm(request.user)
@@ -168,12 +168,14 @@ def change_password(request):
   return render(request, 'accounts/change_password.html', context)
 ```
 
+
+
 ### 암호 변경 시 세션 무효화 방지
 
 암호가 변경되어도 로그아웃 되지 않도록 새로운 password hash로 session을 업데이트
 
 ```python
-update_settion_auth_hash(request, user)
+update_session_auth_hash(request, user)
 ```
 
 ![image-20210915233251084](image/2-5.png)
