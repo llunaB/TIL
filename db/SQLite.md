@@ -108,7 +108,7 @@ sqlite3 tutorial.sqlite3
 ```sql
 CREATE TABLE tablename (
 id INTEGER PRIMARY KEY,
-name TEXT
+name TEXT NOT NULL
 );
 ```
 
@@ -123,8 +123,6 @@ DROP TABLE tablename;
 ```sql
 ALTER TABLE 기존이름 RENAME TO 새이름;
 ```
-
-
 
 
 
@@ -181,4 +179,3 @@ SELECT * FROM 테이블 ORDER BY 컬럼1, 컬럼2 DESC;
 ```sql
 SELECT 컬럼1, aggregate_function(컬럼2) FROM 테이블 GROUP BY 컬럼1, 컬럼2;
 ```
-

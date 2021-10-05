@@ -95,8 +95,6 @@ CREATE TABLE classmates(
 );
 
 INSERT INTO classmates (name, age, address) VALUES('홍길동', 20, 'seoul')
-
-INSERT INTO classmates (address='seoul', age=20, name='홍길동');
 ```
 
 
