@@ -105,3 +105,4 @@ HTTP는 **요청 메서드**를 정의하여, 주어진 리소스에 수행하�
 - [`PATCH`](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/PATCH)
 
   `PATCH` 메서드는 리소스의 부분만을 수정하는 데 쓰입니다.
+
