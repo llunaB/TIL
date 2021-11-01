@@ -6,6 +6,62 @@
   - Airbnb Javascript Style Guide
   - Google Javascript Style Guide
 
+
+
+# DOM 변경 메서드
+
+## Document.createElement()
+
+작성한 태그명의 html 요소 생성하여 반환
+
+## Element.append()
+
+특정 부모 노드의 자식리스트 중 마지막 자식 다음에 노드객체나 스트링을 삽입
+
+반환값 없음
+
+여러 노드 객체와 문자열 추가 가능
+
+## Node.appendChild()
+
+한 Node를 특정 부모 노드의 자식 노드리스트 중 마지막 자식으로 삽입
+
+반환값 있음
+
+하나의 노드 객체만 추가 가능
+
+## Node.innerText
+
+노드 객체와 그 자손의 텍스트 컨텐츠를 표현 => 태그까지 출력
+
+## Element.innerHTML
+
+요소 내 HTML마크업을 반환 => 태그 제외하고 출력(반영)
+
+### XSS(Cross-site Scripting) 주의
+
+태그 포함한 악성 코드를 삽입하여 민감한 정보를 탈취할 수 있다.
+
+## ChildNode.remove()
+
+노드가 속한 트리에서 해당 노드를 제거
+
+## Node.removeChild()
+
+DOM에서 자식 Node를 제거하고 제거된 노드를 반환
+
+## Element.setAttribute(name, value)
+
+## Element.getAttribute(attributeName)
+
+
+
+
+
+---
+
+
+
 # variables
 
 > 변수와 식별자
@@ -91,18 +147,6 @@ let bar = 0
 ![image-20211028174542100](/Users/euijinpang/Library/Application Support/typora-user-images/image-20211028174542100.png)
 
 - 참조 타입 : 함수, 배열, 객체
-
-# conditions
-
-# loops
-
-# functions
-
-# arrays
-
-# arrays-advanced
-
-# objects
 
 
 
