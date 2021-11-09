@@ -1010,11 +1010,43 @@ UPDATE users_user SET country = '경기도' WHERE first_name = '옥자' AND last
 
 
 
+---
+
+# more
+
+```sql
+-- 동물 보호소에 들어온 모든 동물의 아이디와 이름, 보호 시작일을 이름 순으로 조회하는 SQL문을 작성해주세요. 단, 이름이 같은 동물 중에서는 보호를 나중에 시작한 동물을 먼저 보여줘야 합니다
+-- 이름을 사전 순으로 정렬하면 다음과 같으며, 'Jewel', 'Raven', 'Sugar'
+-- 'Raven'이라는 이름을 가진 개와 고양이가 있으므로, 이 중에서는 보호를 나중에 시작한 개를 먼저 조회합니다.
+
+SELECT ANIMAL_ID, NAME, DATETIME FROM ANIMAL_INS ORDER BY NAME ASC, DATETIME DESC;
+
+```
+
+### SUM, MAX, MIN
+
+```SQL
+SELECT datetime FROM ANIMAL_INS ORDER BY datetime DESC LIMIT 1;
+SELECT MAX(datetime) FROM ANIMAL_INS; 
+```
+
+### 중복 없이 이름 세기
+
+count 함수는 Null을 세지 않기 때문에 굳이 WHERE NAME IS NOT NULL을 쓰지 않음.
+
+```sql
+SELECT COUNT(DISTINCT NAME) FROM ANIMAL_INS;
+```
+
+### 고양이와 개가 각각 몇 마리인지 조회 (cat -> dog)
+
+```sql
+SELECT ANIMAL_TYPE, COUNT(ANIMAL_ID) FROM ANIMAL_INS GROUP BY ANIMAL_TYPE ORDER BY ANIMAL_TYPE ASC;
+```
+
 
 
 ---
-
-
 
 # 기타
 
