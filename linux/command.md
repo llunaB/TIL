@@ -1,6 +1,20 @@
-# command
+# command-line interface(CLI)
 
 > 리눅스 기본 명령어 정의
+
+
+
+## 형태
+
+command + -option(커맨드를 어떻게 실행할 것인지) + argument(어느 대상에 대해 실행할 것인지)
+
+
+
+## 매뉴얼
+
+man + argument(command)
+
+- 올리기 b, 내리기 spaceber, 나오기 q
 
 
 
@@ -8,7 +22,7 @@
 
 - $ : prompt
 - / : Root directory
-- ~ : Home directory
+- ~ : Home directory (/Users/euijinpang)
 - . : 현재 위치한 폴더를 지칭
 - .. : 현재 위치한 폴더를 기준으로 상위 폴더를 지칭
 
@@ -19,6 +33,9 @@
 - tab : 파일/폴더 이름 자동완성 기능
 - ctrl+c : 실행중인 프로세스 취소
 - 키보드 방향키 위 아래 : 이전에 입력한 명령어 기록 탐색
+- control + A , E : 커서 맨 앞뒤 이동
+- option + 화살표 : 단어 이동
+- clear + Enter : 화면 클리어
 
 
 

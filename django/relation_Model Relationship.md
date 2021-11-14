@@ -257,7 +257,7 @@ admin.site.register(User, UserAdmin)
 
 
 
-![image-20211019090835408](/Users/euijinpang/TIL/relation.assets/image-20211019090835408.png)
+![image-20211019090835408](relation.assets/image-20211019090835408.png)
 
 위치만 다르고 똑같은 기능!!
 
@@ -265,23 +265,23 @@ admin.site.register(User, UserAdmin)
 
 Group-user 연결되어있으므로 설정을 바꿔주고 마이그레이션
 
-![image-20211019091652716](/Users/euijinpang/TIL/relation.assets/image-20211019091652716.png)
+![image-20211019091652716](relation.assets/image-20211019091652716.png)
 
 article, user 연결
 
-![image-20211019092513972](/Users/euijinpang/TIL/relation.assets/image-20211019092513972.png)
+![image-20211019092513972](relation.assets/image-20211019092513972.png)
 
 이건 비권장
 
 오른쪽의 user 클래스는 여기저기 쓰이므로 변수화하는게 좋다
 
-![image-20211019092740906](/Users/euijinpang/TIL/relation.assets/image-20211019092740906.png)
+![image-20211019092740906](relation.assets/image-20211019092740906.png)
 
-![image-20211019092755147](/Users/euijinpang/TIL/relation.assets/image-20211019092755147.png)
+![image-20211019092755147](relation.assets/image-20211019092755147.png)
 
 
 
-![image-20211019092908796](/Users/euijinpang/TIL/relation.assets/image-20211019092908796.png)
+![image-20211019092908796](relation.assets/image-20211019092908796.png)
 
 1번 유저를 기본유저로 설정
 
@@ -291,7 +291,7 @@ article, user 연결
 
 delete 문제발생
 
-![image-20211019114453366](/Users/euijinpang/TIL/relation.assets/image-20211019114453366.png)
+![image-20211019114453366](relation.assets/image-20211019114453366.png)
 
 
 
@@ -304,5 +304,4 @@ delete 문제발생
 2. 마이그레이션.
 
 3. 1번유저 디폴트로 잡음.
-
 
