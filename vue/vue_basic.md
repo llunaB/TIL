@@ -48,6 +48,8 @@ https://vuejs.org/v2/guide/
 
 # MVVM 모델(Design Pattern)
 
+![image-20211115011747936](vue_basic.assets/image-20211115011747936.png)
+
 - Model => 데이터 부분, { key: value } 자바스크립트 오브젝트 자료구조
 - View => DOM (HTML)
 - ViewModel => Vue, DOM과 데이터를 중개하는 부분, Vue 인스턴스
