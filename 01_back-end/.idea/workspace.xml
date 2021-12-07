@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cff44014-0c56-439c-a775-9ed839a6695e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/OOP_다형성.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_상속2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_추상클래스.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_추상클래스_다중상속.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algorithm/.idea/algorithm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algorithm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/알고리즘 평가법.assets/image-20211002164210176.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/알고리즘 평가법.assets/image-20211002164443639.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/알고리즘 평가법.assets/image-20211002164512365.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/알고리즘 평가법.assets/image-20211002164644643.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/알고리즘 평가법.assets/image-20211002165117026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/알고리즘 평가법.assets/image-20211002165203592.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/알고리즘 평가법.assets/image-20211002165424693.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/알고리즘 평가법.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/재귀함수(문제오류및해결포함).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/재귀함수.assets/image-20211002182158380.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/탐색(선형,이진),정렬(선택,삽입).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/탐색,정렬.assets/image-20211002163353051.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/탐색,정렬.assets/image-20211002163543341.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/탐색,정렬.assets/image-20211002163620563.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/00_알고리즘시작/탐색,정렬.assets/image-20211002163708504.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/1. Brute Force.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/2. Greedy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/3. Divide_and_Conquer(MergeSort, QuickSort).assets/image-20211007094830321.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/3. Divide_and_Conquer(MergeSort, QuickSort).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/기본_자료구조_배열.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/자료구조 퀴즈.assets/image-20211009184924221.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/자료구조 퀴즈.assets/image-20211009184947426.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/자료구조 퀴즈.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/자료구조.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/추상자료형_리스트,큐,스택,딕셔너리,세트.assets/image-20211008170842902.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/추상자료형_리스트,큐,스택,딕셔너리,세트.assets/image-20211008172521870.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/추상자료형_리스트,큐,스택,딕셔너리,세트.assets/image-20211008172641344.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/추상자료형_리스트,큐,스택,딕셔너리,세트.assets/image-20211008202609929.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/추상자료형_리스트,큐,스택,딕셔너리,세트.assets/image-20211008202846328.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/99_자료구조/추상자료형_리스트,큐,스택,딕셔너리,세트.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/heappush vs. heapify.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/그래프.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/다이나믹 프로그래밍.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/정렬알고리즘비교.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_algorithm/힙 &amp; 우선순위 큐.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_back-end/Django_QuerySet_ORM.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919111029524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919113011041.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919113818002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919131552040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919134022694.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919134331103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919134354603.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919140630189.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919140750739.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919141401600.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919141522804.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919142136410.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919142504078.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919143550570.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919150630483.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919150859812.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919155055264.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919155118699.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919155515034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919155542456.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919160322346.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919160334252.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919170310892.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919172137667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919172222596.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/images/image-20210919172355827.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/python_추석특강 2_클래스,모듈,패키지.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/python_추석특강1_자료구조,함수.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/람다함수.assets/image-20211002111847119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/람다함수.assets/image-20211002111907902.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/람다함수.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/람다함수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/리스트.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/리스트내포.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/리스트문제풀이/READMD.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/리스트문제풀이/리스트실습문제_s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/리스트문제풀이/리스트실습문제_s2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/매개변수.assets/image-20211002104631080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/매개변수.assets/image-20211002104649477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/매개변수.assets/image-20211002104706040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/매개변수.assets/image-20211002104721584.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/매개변수.assets/image-20211002104923191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/매개변수.assets/image-20211002105140352.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/매개변수.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/매개변수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/맵,필터함수.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929115747726.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929115800104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929115837313.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929115857719.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929115930586.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929120000963.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929120259660.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929121257362.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929121323410.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트, ....assets/image-20210929121339579.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열, 리스트,할당과복사.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/문자열.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/에러와 예외처리.assets/image-20210921120905771.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/에러와 예외처리.assets/image-20210921121611796-2231495.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/에러와 예외처리.assets/image-20210921122533228-2231502.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/에러와 예외처리.assets/image-20210921122556613-2231499.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/에러와 예외처리.assets/image-20210921122628300-2231492.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/에러와 예외처리.assets/image-20210921122628300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/에러와 예외처리.assets/image-20210921154117175.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/에러와 예외처리.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파이썬_자료형_심화.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파일입출력.assets/image-20210921073131500-2231437.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파일입출력.assets/image-20210921084619627-2231449.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파일입출력.assets/image-20210921084659645-2231454.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파일입출력.assets/image-20210921084659645.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파일입출력.assets/image-20210921092504762-2231517.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파일입출력.assets/image-20210921092652611-2231521.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파일입출력.assets/image-20210921092706639-2231525.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파일입출력.assets/image-20210921161949007-2231515.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/파일입출력.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_python/할당과복사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/01. APS(Algorithm Problem Solving).assets/bigOnotation.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/01_APS(Algorithm Problem Solving).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02. Array.assets/image-20210817223000537.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02. Array.assets/image-20210817223019698.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02. Array.assets/image-20210817223028320.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array, Search.assets/image-20210829180821983-16302281055771.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array, Search.assets/image-20210829180821983.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array, Search.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210818214513770.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210819000826428.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210819000923457.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210819000934869.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210819001204336.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210819001248669.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210819004300539.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210819004443289.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210819004511531.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210819004534522.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210821215309103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210821215334726.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/02_Array.assets/image-20210821215438032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/03_Sorting.assets/image-20210821234010901.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/03_Sorting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/04_String.assets/image-20210819011821919.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/04_String.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210818095938426.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210818102107920.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210818104805296.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210818114916097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210818142508876.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210818145152062.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210818145250528.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210818154029652.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210819091147654.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210819091208882.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210819091221053.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210819092742369.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210819092802536.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210819092837883.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210819092921428.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.assets/image-20210819100904140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/05_Stack.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/2중배열_90도회전.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/4881_배열최소합.assets/image-20210825132107524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/4881_배열최소합.assets/순열.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/4881_배열최소합.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/README.assets/image-20210929171337887.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/README.assets/image-20210929171453199.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/README.assets/image-20210929171514851.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/README.assets/image-20210929171616544.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/README.assets/image-20210929171633803.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/README.assets/image-20210929182701040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/16진수/참고자료.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/5185_이진수/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/5185_이진수/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/5185_이진수/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/5185_이진수/s2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/5185_이진수/s3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/image-20210406213928896.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/image-20210928092726497.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/image-20210928092906229.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/image-20210928093140772.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/image-20210928093344249.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_1-2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_10.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_11.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_12.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_2-2-1617712772044.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_2-2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_3-2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_4-2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_5-2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_7.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.assets/논리와증명_9.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/1_논리와 증명.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/2_수와 표현.assets/image-20210928101404661.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/2_수와 표현.assets/image-20210928102440817.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/2_수와 표현.assets/수와표현_2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/2_수와 표현.assets/수와표현_3-2_3-4.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/2_수와 표현.assets/수와표현_4.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/2_수와 표현.assets/수와표현_5.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/2_수와 표현.assets/예시1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/2_수와 표현.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/3_집합과 조합.assets/예시2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/3_집합과 조합.assets/집합과조합론_10.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/3_집합과 조합.assets/집합과조합론_13.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/3_집합과 조합.assets/집합과조합론_16.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/3_집합과 조합.assets/집합과조합론_3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/3_집합과 조합.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/4_기초수식.assets/기초수식_2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/4_기초수식.assets/기초수식_4.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/4_기초수식.assets/기초수식_6.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/4_기초수식.assets/기초수식_8.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/4_기초수식.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/5_재귀.assets/image-20210925231537705.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/5_재귀.assets/image-20210926214721791.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/5_재귀.assets/image-20210928142710288.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/5_재귀.assets/재귀_1(4, 6대체).PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/5_재귀.assets/재귀_2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/5_재귀.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/6_동적 프로그래밍.assets/image-20210925231741745.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/6_동적 프로그래밍.assets/image-20210925232248396.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/6_동적 프로그래밍.assets/동적프로그래밍2(3대체).PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/APS/이산수학/E조/6_동적 프로그래밍.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/BFS(Breadth First Search).assets/image-20210825105003991.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/BFS(Breadth First Search).assets/image-20210825112954705.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/BFS(Breadth First Search).assets/image-20210825133545589.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/BFS(Breadth First Search).assets/image-20210825133658928.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/BFS(Breadth First Search).assets/image-20210825152650333.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/BFS(Breadth First Search).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/DFS(Depth First Search).assets/image-20210826084516633.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/DFS(Depth First Search).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Palindrome.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Pattern-Matching Algorithms.assets/image-20210817112349370.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Pattern-Matching Algorithms.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Que.assets/image-20210825095151000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Que.assets/image-20210825101609108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171224658.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171246412.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171323169.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171339344.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171351902.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171432259.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171443320.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171457106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171507461.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171515377.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210825171530003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210826092545711.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210826092557737.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210826092610697.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210826092635311.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210826092649551.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210826092652099.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.assets/image-20210826092705847.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/Queue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923094803355.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923094945417.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923095221459.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923100429860.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923101524884.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923101657809.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923101735702.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923101752563.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923151246276.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.assets/image-20210923160933633.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/TREE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/bubble_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/counting_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/문제풀이 - string.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/미로찾기.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/선형구조, 비선형구조.assets/image-20210819095054818.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/선형구조, 비선형구조.assets/image-20210819095111138.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/선형구조, 비선형구조.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/표기법.assets/image-20210823221640451.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm/표기법.md" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OOP_추상클래스_다중상속.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOP_추상클래스.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="149" column="17" lean-forward="true" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOP_다형성.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOP_상속2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/OOP_상속2.py" />
+        <option value="$PROJECT_DIR$/OOP_다형성.py" />
+        <option value="$PROJECT_DIR$/OOP_추상클래스.py" />
+        <option value="$PROJECT_DIR$/OOP_추상클래스_다중상속.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-46" />
+    <option name="y" value="528" />
+    <option name="width" value="1680" />
+    <option name="height" value="1025" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="01_back-end" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01_back-end" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.OOP_추상클래스_다중상속">
+    <configuration name="OOP_다형성" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_back-end" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OOP_다형성.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OOP_추상클래스" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_back-end" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OOP_추상클래스.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OOP_추상클래스_다중상속" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_back-end" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OOP_추상클래스_다중상속.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.OOP_추상클래스_다중상속" />
+        <item itemvalue="Python.OOP_추상클래스" />
+        <item itemvalue="Python.OOP_다형성" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cff44014-0c56-439c-a775-9ed839a6695e" name="Default Changelist" comment="" />
+      <created>1638875539271</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638875539271</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="30" width="1680" height="1025" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10307414" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32901832" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399137" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11461126" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32901832" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399137" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP_capsule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP_상속.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP_상속2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP_추상클래스.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="149" column="17" lean-forward="true" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP_다형성.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP_추상클래스_다중상속.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
