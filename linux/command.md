@@ -62,6 +62,12 @@ ls
 ls -a
 ```
 
+- 특정 이름으로 시작하는 파일 찾기
+
+```
+ls |grep <keyword>
+```
+
 
 
 ##### cd (change directory)
@@ -97,6 +103,45 @@ touch <file name>
 
 
 
+## 읽기 & 수정하기
+
+##### cat (concatenate)
+
+- 파일 읽기
+
+```bash
+cat <option> <file name>
+```
+
+- 파일 여러개 읽기
+
+```bash
+cat <file1> <file2> <file3>
+```
+
+- 파일 여러개 합쳐 큰 파일 만들기 
+  - 세 개의 합쳐 새로운 file 4 를 만든다.
+
+```bash
+cat <file1> <file2> <file3> > <file4>
+```
+
+- 기존 파일에 덧붙이기
+  - 기존에 있는 file2에 file1의 내용을 덧붙이며, 새로운 파일이 생성된다.
+
+```bash
+cat <file1> >> <file2>
+```
+
+- 새로운 파일 만들기
+  - touch <file name> 과 같지만 명령어 입력 후 표준입력으로 내용을 입력, CTRL-d 를 입력하면 새로운 내용이 저장된 새로운 파일이 만들어진다.
+
+```bash
+cat > <file name>
+```
+
+
+
 ## 삭제
 
 ##### rm (remove)
@@ -107,15 +152,43 @@ touch <file name>
 rm <file name>
 ```
 
-- 지정한 폴더 및 파일 삭제 
-
-```bash
-rm -r <file name>
-```
-
-- 지정한 폴더 및 파일 강제 삭제 => 쓰지 않는다!!
+- 지정한 폴더 및 파일 경고없이 강제 삭제 => 쓰지 않는다!!
 
 ```bash
 rm -rf <file name>
+```
+
+- 해당 폴더 안의 모든 파일 삭제
+
+```bash
+rm -f * 
+```
+
+- 파일 삭제할 때 확인하기
+
+```bash
+rm -ri 
+```
+
+- 같은 형식의 파일 전부 제거
+
+```bash
+rm *.exe
+```
+
+- 디렉토리 삭제(파일 및 폴더 삭제)
+
+```bash
+rm -r folder/
+```
+
+
+
+## 확인
+
+- 경로 확인
+
+```bash
+tree folder/
 ```
 

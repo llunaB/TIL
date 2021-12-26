@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+      .active {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="app">
+      {{ message }}
+    </div>
+
+    <div id="app-2">
+      <!-- 속성 바인딩 -->
+      <span v-bind:title="message">
+        hover mouse here!
+      </span>
+      <!-- 클래스 바인딩 -->
+      <span v-bind:class="{ active : isRed }">
+        클래스 바인딩
+      </span>
+      <!-- 스타일 바인딩 -->
+      <span 
+        v-bind:class="{ active : isActive }"
+        v-bind:style="{ fontSize: fontSize + 'px'}">
+        스타일 바인딩
+      </span>
+    </div>
+
+    <div id="app-3">
+      <div v-show="show">
+        This is v-show
+      </div>
+      <span v-if="seen">
+        Now you see me
+      </span>
+
+      <div v-if="myType === 'A'">
+        A
+      </div>
+      <div v-else-if="myType === 'B'">
+        B
+      </div>
+      <div v-else-if="myType === 'C'">
+        C
+      </div>
+      <div v-else>
+        Not A/B/C
+      </div>
+      <button v-bind:disabled="isButtonDisabled">Button</button>
+
+    </div>
+
+    <div id="app-4">
+      <ol>
+        <li v-for="str in myStr">
+          {{ str }}
+        </li>
+      </ol>
+      <ol>
+        <li v-for="(fruit, index) in fruits">
+          {{ fruit }} / {{ index }}
+        </li>
+      </ol>
+      <ol>
+        <li v-for="(todo, index) in todos" v-bind:key="`fruit-${index}`">
+          {{ todo.text }} / {{ index }}
+        </li>
+      </ol>
+    </div>
+
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <div id="app-6">
+      <p>{{ message }}</p>
+      <input v-model="message">
+
+      <!-- 한중일의 경우 -->
+      <p>{{ message_kor }}</p>
+      <input v-on:input="oninputChange">
+
+    </div>
+
+    <div id="app-7">
+      <ol>
+        <todo-item 
+          v-for="item in groceryList"
+          v-bind:todo="item"
+          v-bind:key="item.id"
+        >
+        </todo-item>
+      </ol> 
+    </div>
+
+    <div id="app-8">
+      <p>Using mustaches: {{ myHtml }}</p>
+      <p>Using v-html directive: 
+        <span v-html="myHtml"></span>
+      </p>
+    </div>
+
+    <div id="app-9">
+      <input type="checkbox" id="checkbox" v-model="isChecked">
+      <label for="checkbox">{{ isChecked }}</label>
+
+      <p>{{ num }}</p>
+      <p>{{ doublenum }}</p>
+      <p>{{ doublenumMethod() }}</p>
+      <button @click="add">add 1</button>
+
+    </div>
+
+    <div id="app-10">
+      <p>{{ numbers }}</p>
+      <p>{{ getOddNums }}</p>
+      <p>{{ getUnderTenNums }}</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
