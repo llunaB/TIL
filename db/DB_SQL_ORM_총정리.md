@@ -705,7 +705,7 @@ SELECT last_name, COUNT(*) FROM users GROUP BY last_name;
 
 ##### 1. SQL Query 
 
-![image-20210914202734927](/Users/euijinpang/db/DB.assets/image-20210914202734927.png)
+![image-20210914202734927](DB.assets/image-20210914202734927.png)
 
 ```sql
 -- 1. 테이블 생성
@@ -742,15 +742,15 @@ SELECT * FROM hotels WHERE room_num NOT LIKE 'B%' AND check_in='2020-01-04' ORDE
 
 ```
 
-5번![image-20210915124028877](/Users/euijinpang/db/DB.assets/image-20210915124028877.png)
+5번![image-20210915124028877](DB.assets/image-20210915124028877.png)
 
 7번
 
-![image-20210915124806269](/Users/euijinpang/db/DB.assets/image-20210915124806269.png)
+![image-20210915124806269](DB.assets/image-20210915124806269.png)
 
 
 
-![image-20210914231709628](/Users/euijinpang/db/DB.assets/image-20210914231709628.png)
+![image-20210914231709628](DB.assets/image-20210914231709628.png)
 
 ##### 2. SQL ORM 비교 
 

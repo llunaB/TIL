@@ -6,7 +6,7 @@
 
   - settings.py
 
-  ![image-20210915004710479](image/image-20210915004710479.png)
+  ![image-20210915004710479](SQLite.assets/image-20210915004710479.png)
 
 
 

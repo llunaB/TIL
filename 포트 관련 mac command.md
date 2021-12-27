@@ -1,4 +1,4 @@
-# listen port & pid 확
+# listen port & pid 확인
 
 맥 환경에서 포트 정보를 확인하고, 모르는 포트를 열어놓은 프로세스가 있는지 확인.
 

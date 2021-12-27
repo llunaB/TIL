@@ -1,4 +1,4 @@
-# VIM
+# VIM command
 
 ### 모드
 

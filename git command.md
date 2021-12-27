@@ -1,4 +1,4 @@
-### git
+# git command
 
 - **git init** : 현재 디렉토리를 Git이 관리하는 프로젝트 디렉토리(=working directory)로 설정하고 그 안에 레포지토리(.git 디렉토리) 생성
 - **git config** **user.name 'codeit'** : 현재 사용자의 아이디를 'codeit'으로 설정(커밋할 때 필요한 정보)
@@ -76,6 +76,8 @@ git show [commit_id]
   - 파일 수정
   - git add .
   - **git commit --amend**
+  
+  
 
 # commit message 작성 가이드라인
 
@@ -94,6 +96,8 @@ git show [commit_id]
 - 적용한 해결책이 어떤 효과를 가지는지
 
 **(6) 다른 사람들이 자신의 코드를 바로 이해할 수 있다고 가정하지 말고 최대한 친절하게 작성하세요.** 
+
+
 
 # 커밋할 때 알아야할 가이드라인
 
@@ -264,6 +268,8 @@ git revert [commit_id]
 :wq
 git push
 ```
+
+
 
 # 여러 커밋 취소하기
 
