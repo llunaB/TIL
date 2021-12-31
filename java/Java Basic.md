@@ -9,6 +9,31 @@
 
 
 
+# 구조
+
+```java
+ // HelloWorld 라는 이름의 공개된 클래스를 만든다
+public class HelloWorld {
+    // main 메소드는 누구나 접근할 수 있고, 바로 실행할 수 있고, 리턴값 없다.
+    // arg라는 이름의 문자열 변수가 메소드에 전달된다.
+    public static void main(String[] args) {                                     
+        System.out.println("Hello World!");
+    }
+}
+```
+
+- `public` - 접근 제어자
+- `HelloWorld` - (내가 정한) 클래스명
+- `static` - 바로 실행 가능하게 하는 제어자. main은 가장 먼저 실행되어야 하므로 main 앞에는 항상 static을 붙인다.
+- `main` - 메소드(함수) 의 이름. 자바는 실행시 가장 먼저 main 이라는 이름의 메소드를 찾아 실행한다.
+- `String[] args` - 자료형 + 변수명 으로 main 메서드가 받는 문자열 파라미터이다.
+- `void` - 메서드의 리턴 값이 없다는 뜻이다.
+- `System` - 자바의 내장 클래스이다.
+- `out` - 자바 내장 클래스의 변수이다.
+- `println` - 자바 내장 클래스의 변수의 메서드이다.
+
+
+
 # 자료형
 
 ## 자료형이란?
@@ -94,6 +119,184 @@ b[0] = 2;
 ```
 
 
+
+# String Class
+
+문자열은 String 클래스 기반의 자료형이다.
+
+- 생성자로 생성
+
+```java
+char data[] = {'가', '나', '다'};
+String myString = new String(data);
+```
+
+- 문자열 리터럴로 생성 & 메서드
+
+```java
+// 문자열 리터럴(String Literal)
+String a1 = "aBc";
+System.out.println(a1.toUpperCase()); 	// 대문자로 변환
+System.out.println(a1.toLowerCase()); 	// 소문자로 변환
+System.out.println(a1); 								// "aBc" 원본 유지
+```
+
+- 참조형의 비교연산자는 기본형과 다르게 값 자체가 아닌 가리키는 인스턴스를 비교
+
+```java
+// 참조형의 비교연산자는 가리키는 인스턴스가 같은 인스턴스인지를 확인
+String b1 = "aBc";
+System.out.println(b1.toLowerCase() == "abc"); 				// false
+System.out.println(b1.toLowerCase().equals("abc")); 	// true
+```
+
+
+
+# Math Class & Random Class
+
+```java
+import java.lang.Math;
+import java.util.Random;
+import java.util.function.DoubleConsumer;
+import java.util.stream.DoubleStream;
+
+public class Conv {
+    public static void main(String[] args) {
+        // Math Class
+        // 절댓값
+        System.out.println(Math.abs(-10));
+        System.out.println(Math.abs(8));
+
+        // 최솟값
+        System.out.println(Math.min(4.2, -5.3));
+        System.out.println(Math.max(4.0, 10));
+
+        // Random Class - 인스턴스 생성해야한다.
+        Random rand = new Random();
+        System.out.println(rand.nextInt(10)); // 0 이상 10 미만의 랜덤한 값
+				
+      	// 10 이상 30 미만의 랜덤한 값 = 0이상 20미만 랜덤값 + 10
+        int min = 10;
+        int max = 30;
+        int rand_int = (int)Math.floor(Math.random()*(max-min+1) + min); 
+        int rand_int2 = rand.nextInt((max-min)+1) + min; 
+      
+        System.out.println("rand+int " + rand_int);
+        System.out.println("rand+int2 " + rand_int2);
+      
+        // 랜덤 불리언
+        System.out.println(rand.nextBoolean());
+
+        // 0에서 1사이의 난수 5개 생성
+        DoubleStream ds = rand.doubles();
+        ds.limit(5).forEach(new DoubleConsumer() {
+            @Override
+            public void accept(double value) {
+                System.out.println(value);
+            }
+        });
+    }
+}
+
+```
+
+
+
+# Wrapper class
+
+기본 자료형을 객체 형식으로 감싸는 클래스
+
+- 기본 자료형을 참조형처럼 다룰 때 사용한다.
+- Wrapper class의 인스턴스는 생성자 및 리터럴로 생성 가능하다.
+- `Integer` 클래스는 `int` 형을 감싼다.
+- `Double` 클래스는 `double` 형을 감싼다.
+- `Long` 클래스는 `long`형을 감싼다.
+- `Boolean` 클래스는 `boolean` 을 감싼다.
+
+```java
+// 생성자로 인스턴스 생성
+Integer i = new Integer(123);
+
+// 리터럴로 인스턴스 생성
+Integer i = 123;
+```
+
+- 비교 - 참조형 비교연산자는 가리키는 객체가 같은지 비교, 두 생성자를 통해 만든 다른 객체이므로 false를 반환
+
+```java
+System.out.println(123 == 123); 	// true
+System.out.println(new Integer(123) == new Integer(123));		// false
+System.out.println(new Integer(123).equals(new Integer(123))); 	// true
+```
+
+
+
+# Array & ArrayList
+
+- ArrayList 는 파이썬 배열처럼 동적배열로 사용 가능하다.
+
+### 선언
+
+```java
+ArrayList<자료형(Wrapper 클래스)> 리스트명 = new ArrayList<>();
+```
+
+### 메서드
+
+- `ArrayList.add(val)`  맨 뒤에 값을 추가한다.
+- `ArrayList.remove(idx)` 해당 인덱스의 값을 삭제한다.
+- `ArrayList.get(idx)` 해당 인덱스의 값을 가져온다.
+- `ArrayList.size()` 리스트 길이를 구한다.
+
+```java
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Conv {
+    public static void main(String[] args) {
+        // 일반 배열 생성1 (메서드 활용)
+        int[] myArray = (int[])Array.newInstance(int.class, 10);
+        System.out.println(Arrays.toString(myArray));
+        // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+        // 일반 배열 생성2 (선언 + 메모리할당)
+        String[] myArray2;
+        myArray2 = new String[10];
+        System.out.println(Arrays.toString(myArray2));
+        // [null, null, null, null, null, null, null, null, null, null]
+
+        // 일반 배열 생성3 (통합)
+        int[] myArray3 = new int[10];
+        System.out.println(Arrays.toString(myArray3));
+        // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+        // ArrayList 생성 
+        ArrayList<Integer> myArrayList = new ArrayList<>();
+        System.out.println(myArrayList);
+        // []
+        
+        myArrayList.add(1);
+        System.out.println(myArrayList);
+        // [1]
+        
+        myArrayList.add(0, 3);
+        myArrayList.add(0, 5);
+        System.out.println(myArrayList);
+        // [5, 3, 1]
+        
+        System.out.println(myArrayList.get(0));
+        // 5
+        
+        myArrayList.remove(0);
+        System.out.println(myArrayList);
+        // [3, 1]
+        
+        System.out.println(myArrayList.size());
+        // 2
+    }
+}
+```
 
 
 

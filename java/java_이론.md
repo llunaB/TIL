@@ -1,5 +1,17 @@
 [TOC]
 
+# JVM
+
+"자바 가상머신 Java Virtual Machine, JVM "
+
+어느 운영체제던 디바이스던 동일하게 동작하며 호환성 문제를 해결해준다.
+
+- JVM : Java Virtaul Machine 자바 가상머신
+- JRE : Java Runtime Environment 자바가 돌아가기 위한 환경
+- JDK : Java Development Kit 자바 개발도구로 JDK 설치시 JVM이 설치된다.
+
+
+
 # Write Once, Run Anywhere
 
 C++ 은 컴파일러로 컴파일 후 바이너리 어플리케이션이 되는데, 컴파일러와 머신코드는 운영체제 종속적이다.  반면 Java는 소스코드를 컴파일 후 "바이트코드" 를 생성하게 되며, 이것을 JVM(Java Virtual Machine) 이라 한다. 
