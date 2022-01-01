@@ -7,6 +7,26 @@
 - **"sout" + tab** : System.out.println();  단축키
 - for문 ( 조건부분 ) 작성시 변수타입 잊지말자!!!!
 
+- 오브젝트가 아닌 string 을 출력하기 => toString() 메서드에 출력하고 싶은 오브젝트를 넣어준다.
+
+```java
+public class Pokemon {
+    public String name;
+
+    Pokemon(String newName) {
+        name = newName;
+    }
+
+    // System.out.print(오브젝트) 시 자동으로 toString() 함수가 사용된다.
+    public String toString() {
+        return name;
+    }
+
+}
+```
+
+
+
 
 
 # 구조
@@ -297,6 +317,65 @@ public class Conv {
     }
 }
 ```
+
+
+
+# HashMap
+
+- 키로는 주로 `String` 을 쓴다. 이름이나 ID를 담는다.
+
+### 선언
+
+```java
+HashMap<KEY자료형(Wrapper 클래스),VALUE자료형> 해시맵명 = new HashMap<>();
+```
+
+### 메서드
+
+- `HashMap.put(Key, Value)`  파라미터 두 개를 넣어 key-value 쌍을 추가한다.
+- `HashMap.remove(Key)` 해당 키와 그 값을 지운다.
+- `HashMap.get(Key)` 해당 키의 값을 가져온다.
+- `HashMap.keySet()` 모든 key를 담고있는 `Set` 자료형을 리턴하며 `for each` 문으로 탐색 가능하다.
+
+```java
+import java.util.HashMap;
+
+public class HashMapPrac {
+    public static void main(String[] args) {
+      	// 선언
+        HashMap<String, Pokemon> pokedex = new HashMap<>();
+      	
+      	// 메서드
+        pokedex.put("이상해씨", new Pokemon("이상해씨"));
+        pokedex.put("이상해풀", new Pokemon("이상해풀"));
+        pokedex.put("이상해꽃", new Pokemon("이상해꽃"));
+        pokedex.put("피카츄", new Pokemon("피카츄"));
+      
+        System.out.println(pokedex); 
+      	// {이상해풀=이상해풀, 이상해꽃=이상해꽃, 피카츄=피카츄, 이상해씨=이상해씨}
+      
+     
+        pokedex.remove("피카츄");
+        System.out.println(pokedex);
+      	// {이상해풀=이상해풀, 이상해꽃=이상해꽃, 이상해씨=이상해씨}
+      
+      
+        Pokemon pk = pokedex.get("이상해꽃");
+        System.out.println("__" + pk);
+      	// __이상해꽃
+
+        for (String key:pokedex.keySet()) {
+            System.out.println(key);
+          	// key 출력
+            System.out.println(pokedex.get(key));
+          	// value 출력
+        }
+    }
+}
+
+```
+
+
 
 
 
