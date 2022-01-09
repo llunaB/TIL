@@ -81,6 +81,67 @@ cd <folder name>
 
 
 
+## 검색
+
+- 디렉토리의 정보를 다양한 열과 함께 테이블 포맷으로 보여준다
+- List files in long format
+
+```
+ll
+or
+ls -l
+```
+
+- 디렉토리만 보여준다
+- List only directories
+
+```
+ls -d */
+```
+
+- 숨겨진 파일까지 보여준다
+- List files in long format including hidden files
+
+```
+la -a
+```
+
+- 최근 수정된것을 먼저 보여준다
+- List files and sort by date and time
+
+```
+ls -t
+ls -tr(역순)
+```
+
+- 사이즈별로 보여준다(큰것부터 작은것까지)
+- List files and sort by file size
+
+```
+ls -S
+ls -Sr(역순)
+```
+
+- 파일사이즈 단위와 함께 보여준다
+- List files in long format with readable file sizes
+
+```
+ls -lh
+```
+
+- 섞어서 사용한다
+- 숨김파일 + 역순 + 리스트로 + 변경순서별 + 파일사이즈
+
+```
+ls -arlth
+```
+
+
+
+
+
+
+
 ## 생성
 
 ##### mkdir (make directory)
