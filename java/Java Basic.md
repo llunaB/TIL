@@ -416,6 +416,12 @@ public class MultiArray {
 
 # 배열
 
+배열이란?
+
+- `동일한 타입`의 데이터 여러 개를 하나의 연속된 메모리 공간에서 관리하는 것
+- 요소에 접근하는 속도가 매우 빠르며 크기 변경이 불가하다.
+- `.length` 로 배열의 크기 조회 가능
+
 ```java
         // 5개짜리 배열 선언 및 생성
         int[] arr = new int[5];
@@ -606,7 +612,13 @@ System.out.println(stringFromCharArr); // abc
 - `%d` : 10진수 정수
 - `%o` : 8진수 정수
 - `%x` : 16진수 정수
-- `%n` : 줄바꿈
+- `%n`  or `\n`: 줄바꿈
+
+```java
+System.out.printf("%d번째 학생의 이름은 %s입니다.", i, name);
+```
+
+
 
 ### 배열 출력 import java.util.Arrays;
 
