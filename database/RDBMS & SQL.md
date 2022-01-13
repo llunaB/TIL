@@ -170,7 +170,3 @@ DEFAULT 제약 조건은 해당 필드의 **기본값을 설정**할 수 있게 
 
 
 # ddl.sql, dump.sql
-
-ddl.sql 파일은 
-
-dump.sql 파일은 데이터베이스를 모아 담아 
