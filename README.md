@@ -22,3 +22,5 @@
 - 0922 
   - 메세지큐와 메세지 브로커
   - **Publish-and-subscribe** **messaging**
+- 0927
+  - AP, WEB, WAS, DB server
