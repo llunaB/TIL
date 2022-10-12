@@ -100,3 +100,53 @@
 
   
 
+- 1012
+  - 싱글톤 패턴 : 어플리케이션이 시작될 때 어떤 클래스가 최초 한 번만 메모리를 할당하고(static) 그 메모리에 인스턴스를 만들어 사용하는 디자인 패턴
+    - 메모리 낭비 방지
+    - 데이터 공유
+    - 멀티쓰레드 환경에서 동기화 처리 필수
+  - 하나의 인스턴스를 메모리에 등록하여 여러 개의 쓰레드가 동시에 해당 인스턴스를 공유하여 사용한다.
+  - DBCP처럼 공통 객체를 여러개 생성해서 사용해야 하는 상황에서 사용한다
+  - 여러 쓰레드에서 동시에 접근하는 것을 막기 위해 `synchronized` 를 활용한다.
+
+```java
+
+class Connection {
+
+  // 기본생성자를 private 사용하여 생성 불가하게 한다
+  private static Connection _inst = null;
+  private int count = 0;
+
+  // getInstance를 통해서만 생성 가능
+  static public Connection getInstance() {
+    if (_inst == null) {
+      _inst = new Connection();
+      return _inst;
+    }
+    // 인스턴스가 있다면 기존 것을 반환
+    return _inst;
+  }
+
+  public void count() {
+    count++;
+  }
+
+  public int getCount() {
+    return count;
+  }
+
+  // 여러 쓰레드에서 동시에 접근하는 것을 막는다
+  public synchronized static void main(String[] args) {
+    Connection conn1 = Connection.getInstance();
+    conn1.count();
+    Connection conn2 = Connection.getInstance();
+    conn2.count();
+    Connection conn3 = Connection.getInstance();
+    conn3.count();
+
+    System.out.println(conn1.getCount()); // 3
+  }
+}
+
+```
+
